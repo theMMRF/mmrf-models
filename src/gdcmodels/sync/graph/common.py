@@ -134,29 +134,30 @@ class DescriptionsSynchronizer(common.Synchronizer):
     def _get_descriptions(self) -> dict:
         nodes = {
             models.Aliquot: (
-                "annotations.aliquot",
+                # "annotations.aliquot",
                 "cases.samples.aliquots",
                 "cases.samples.analytes.aliquots",
                 "cases.samples.portions.analytes.aliquots",
             ),
             models.Analyte: (
-                "annotations.analyte",
+                # "annotations.analyte",
                 "cases.samples.analytes",
                 "cases.samples.portions.analytes",
             ),
-            models.Annotation: (
-                "cases.annotations",
-                "cases.samples.annotations",
-                "cases.samples.portions.annotations",
-                "cases.samples.portions.analytes.annotations",
-                "cases.samples.portions.analytes.aliquots.annotations",
-                "cases.samples.slides.annotations",
-                "cases.samples.portions.slides.annotations",
-                "cases.diagnoses.annotations",
-                "files.annotations",
-            ),
+            # models.Annotation: (
+            #     "cases.annotations",
+            #     "cases.samples.annotations",
+            #     "cases.samples.portions.annotations",
+            #     "cases.samples.portions.analytes.annotations",
+            #     "cases.samples.portions.analytes.aliquots.annotations",
+            #     "cases.samples.slides.annotations",
+            #     "cases.samples.portions.slides.annotations",
+            #     "cases.diagnoses.annotations",
+            #     "files.annotations",
+            # ),
             models.Archive: ("files.archive",),
-            models.Case: ("annotations.case", "cases.case", "files.cases"),
+            # models.Case: ("annotations.case", "cases.case", "files.cases"),
+            models.Case: ("cases.case", "files.cases"),
             models.Center: (
                 "cases.samples.portions.center",
                 "cases.samples.portions.analytes.aliquots.center",
@@ -171,7 +172,7 @@ class DescriptionsSynchronizer(common.Synchronizer):
             models.Exposure: ("cases.exposures",),
             models.FamilyHistory: ("cases.family_histories",),
             models.File: (
-                "annotations.file",
+                # "annotations.file",
                 "cases.files",
                 "files.file",
                 "files.metadata_files",
@@ -184,16 +185,19 @@ class DescriptionsSynchronizer(common.Synchronizer):
             models.OtherClinicalAttribute: ("cases.follow_ups.other_clinical_attributes",),
             models.PathologyDetail: ("cases.diagnoses.pathology_details",),
             models.Platform: ("files.platform",),
-            models.Portion: ("annotations.portion", "cases.samples.portions"),
+            # models.Portion: ("annotations.portion", "cases.samples.portions"),
+            models.Portion: ("cases.samples.portions"),
             models.Program: (
-                "annotations.project.program",
+                # "annotations.project.program",
                 "cases.project.program",
                 "projects.program",
             ),
-            models.Project: ("annotations.project", "cases.project", "projects.project"),
-            models.Sample: ("annotations.sample", "cases.samples"),
+            # models.Project: ("annotations.project", "cases.project", "projects.project"),
+            models.Project: ("cases.project", "projects.project"),
+            # models.Sample: ("annotations.sample", "cases.samples"),
+            models.Sample: ("cases.samples"),
             models.Slide: (
-                "annotations.slide",
+                # "annotations.slide",
                 "cases.samples.slides",
                 "cases.samples.portions.slides",
             ),
@@ -207,9 +211,9 @@ class DescriptionsSynchronizer(common.Synchronizer):
             for path in paths:
                 descriptions.update(self._load_descriptions_from(node, path))
 
-        descriptions.update(
-            self._load_descriptions_from(models.File, "annotations.annotation", "annotation")
-        )
+        # descriptions.update(
+        #     self._load_descriptions_from(models.File, "annotations.annotation", "annotation")
+        # )
 
         return NestedDict.as_dict(descriptions)
 
@@ -333,24 +337,24 @@ class ProjectProperties:
         return properties
 
 
-class AnnotationProperties:
-    def load_properties(self) -> esmodels.Properties:
-        properties = NestedDict(
-            **{
-                f: ESProperty.string()
-                for f in (
-                    "case_id",
-                    "case_submitter_id",
-                    "entity_type",
-                    "entity_id",
-                    "entity_submitter_id",
-                )
-            }
-        )
+# class AnnotationProperties:
+#     def load_properties(self) -> esmodels.Properties:
+#         properties = NestedDict(
+#             **{
+#                 f: ESProperty.string()
+#                 for f in (
+#                     "case_id",
+#                     "case_submitter_id",
+#                     "entity_type",
+#                     "entity_id",
+#                     "entity_submitter_id",
+#                 )
+#             }
+#         )
 
-        properties.update(_load_properties_from(models.Annotation))
+#         properties.update(_load_properties_from(models.Annotation))
 
-        return properties
+#         return properties
 
 
 class SummaryProperties:
@@ -377,15 +381,16 @@ class SummaryProperties:
 
 
 class CaseProperties:
-    __slots__ = ("_annotations", "_projects", "_summaries")
+    # __slots__ = ("_annotations", "_projects", "_summaries")
+    __slots__ = ("_projects", "_summaries")
 
     def __init__(
         self,
-        annotation: Optional[AnnotationProperties] = None,
+        # annotation: Optional[AnnotationProperties] = None,
         projects: Optional[ProjectProperties] = None,
         summaries: Optional[SummaryProperties] = None,
     ) -> None:
-        self._annotations = annotation or AnnotationProperties()
+        # self._annotations = annotation or AnnotationProperties()
         self._projects = projects or ProjectProperties()
         self._summaries = summaries or SummaryProperties()
 
@@ -402,8 +407,8 @@ class CaseProperties:
             type="nested",
         )
         properties = mapping["properties"]
-        properties["annotations"]["properties"] = self._annotations.load_properties()
-        properties["annotations"]["type"] = "nested"
+        # properties["annotations"]["properties"] = self._annotations.load_properties()
+        # properties["annotations"]["type"] = "nested"
         properties["center"] = NestedDict(properties=_load_properties_from(models.Center))
 
         return mapping
@@ -414,8 +419,8 @@ class CaseProperties:
             type="nested",
         )
         properties = mapping["properties"]
-        properties["annotations"]["properties"] = self._annotations.load_properties()
-        properties["annotations"]["type"] = "nested"
+        # properties["annotations"]["properties"] = self._annotations.load_properties()
+        # properties["annotations"]["type"] = "nested"
         properties["aliquots"] = self._get_aliquots()
 
         return mapping
@@ -426,8 +431,8 @@ class CaseProperties:
             type="nested",
         )
         properties = mapping["properties"]
-        properties["annotations"]["properties"] = self._annotations.load_properties()
-        properties["annotations"]["type"] = "nested"
+        # properties["annotations"]["properties"] = self._annotations.load_properties()
+        # properties["annotations"]["type"] = "nested"
 
         return mapping
 
@@ -438,8 +443,8 @@ class CaseProperties:
         )
         properties = mapping["properties"]
         properties["analytes"] = self._get_analytes()
-        properties["annotations"]["properties"] = self._annotations.load_properties()
-        properties["annotations"]["type"] = "nested"
+        # properties["annotations"]["properties"] = self._annotations.load_properties()
+        # properties["annotations"]["type"] = "nested"
         properties["center"] = NestedDict(properties=_load_properties_from(models.Center))
         properties["slides"] = self._get_slides()
 
@@ -451,8 +456,8 @@ class CaseProperties:
             type="nested",
         )
         properties = mapping["properties"]
-        properties["annotations"]["properties"] = self._annotations.load_properties()
-        properties["annotations"]["type"] = "nested"
+        # properties["annotations"]["properties"] = self._annotations.load_properties()
+        # properties["annotations"]["type"] = "nested"
         properties["portions"] = self._get_portions()
 
         # TODO: REMOVE W/ MAPPING UPDATE
@@ -466,8 +471,8 @@ class CaseProperties:
             type="nested",
         )
         properties = mapping["properties"]
-        properties["annotations"]["properties"] = self._annotations.load_properties()
-        properties["annotations"]["type"] = "nested"
+        # properties["annotations"]["properties"] = self._annotations.load_properties()
+        # properties["annotations"]["type"] = "nested"
         properties["pathology_details"] = NestedDict(
             properties=_load_properties_from(models.PathologyDetail),
             type="nested",
@@ -497,8 +502,8 @@ class CaseProperties:
 
     def load_properties(self) -> NestedDict:
         properties = _load_properties_from(models.Case)
-        properties["annotations"]["properties"] = self._annotations.load_properties()
-        properties["annotations"]["type"] = "nested"
+        # properties["annotations"]["properties"] = self._annotations.load_properties()
+        # properties["annotations"]["type"] = "nested"
         properties["project"] = self._get_project()
         properties["tissue_source_site"] = NestedDict(
             properties=_load_properties_from(models.TissueSourceSite)
@@ -519,6 +524,19 @@ class CaseProperties:
         )
         properties["summary"]["properties"] = self._summaries.load_properties()
 
+        properties["administered_regimen_lines"] = NestedDict(
+            properties=_load_properties_from(models.AdministeredRegimenLine),
+            type="nested",
+        )
+        properties["bone_assessments"] = NestedDict(
+            properties=_load_properties_from(models.BoneAssessment),
+            type="nested",
+        )
+        properties["outcomes"] = NestedDict(
+            properties=_load_properties_from(models.Outcomes),
+            type="nested",
+        )
+
         # id summaries
         properties["sample_ids"] = ESProperty.string()
         properties["submitter_sample_ids"] = ESProperty.string()
@@ -537,10 +555,13 @@ class CaseProperties:
 
 
 class FileProperties:
-    __slots__ = ("_annotations",)
+    # __slots__ = ("_annotations",)
+    __slots__ = ()
 
-    def __init__(self, annotations: Optional[AnnotationProperties] = None) -> None:
-        self._annotations = annotations or AnnotationProperties()
+    # def __init__(self, annotations: Optional[AnnotationProperties] = None) -> None:
+    #     self._annotations = annotations or AnnotationProperties()
+    def __init__(self) -> None:
+        pass
 
     def _get_associated_entities(self) -> NestedDict:
         properties = NestedDict(
@@ -556,9 +577,9 @@ class FileProperties:
     def _get_metadata_files(self) -> NestedDict:
         properties = NestedDict(
             **_load_properties_from(models.File),
-            data_category=ESProperty.string(),
-            data_type=ESProperty.string(),
-            data_format=ESProperty.string(),
+            # data_category=ESProperty.string(),
+            # data_type=ESProperty.string(),
+            # data_format=ESProperty.string(),
             access=ESProperty.string(),
             type=ESProperty.string(),
         )
@@ -677,8 +698,8 @@ class FileProperties:
         properties["center"]["properties"] = _load_properties_from(models.Center)
 
         properties["analysis"] = self._get_analysis()
-        properties["annotations"]["properties"] = self._annotations.load_properties()
-        properties["annotations"]["type"] = "nested"
+        # properties["annotations"]["properties"] = self._annotations.load_properties()
+        # properties["annotations"]["type"] = "nested"
         properties["associated_entities"] = self._get_associated_entities()
         properties["downstream_analyses"] = self._get_downstream_analyses()
         properties["index_files"] = self._get_index_files()

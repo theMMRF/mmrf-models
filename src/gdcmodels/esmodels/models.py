@@ -2,7 +2,8 @@ from typing import Dict, Literal, Sequence, Union
 
 from typing_extensions import NotRequired, TypedDict
 
-GRAPH_INDICES = tuple(("gdc_from_graph", d) for d in ("annotation", "case", "file", "project"))
+# GRAPH_INDICES = tuple(("gdc_from_graph", d) for d in ("annotation", "case", "file", "project"))
+GRAPH_INDICES = tuple(("gdc_from_graph", d) for d in ("case", "file", "project"))
 VIZ_INDICES = tuple(
     (i, i)
     for i in (

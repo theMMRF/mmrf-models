@@ -1,19 +1,18 @@
----
 analysis:
   analyzer:
     autocomplete_analyzed:
       filter:
-        - lowercase
-        - edge_ngram
+      - lowercase
+      - edge_ngram
       tokenizer: standard
     autocomplete_prefix:
       filter:
-        - lowercase
-        - edge_ngram
+      - lowercase
+      - edge_ngram
       tokenizer: keyword
     lowercase_keyword:
       filter:
-        - lowercase
+      - lowercase
       tokenizer: keyword
   filter:
     edge_ngram:
@@ -25,7 +24,7 @@ analysis:
     clinical_normalizer:
       char_filter: []
       filter:
-        - lowercase
+      - lowercase
       type: custom
 index:
   mapping:

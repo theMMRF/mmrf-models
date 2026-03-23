@@ -1,365 +1,219 @@
----
-annotations.aliquot.aliquot_quantity: The quantity in micrograms (ug) of the aliquot(s)
-  derived from the analyte(s) shipped for sequencing and characterization.
-annotations.aliquot.aliquot_volume: The volume in microliters (ul) of the aliquot(s)
-  derived from the analyte(s) shipped for sequencing and characterization.
-annotations.aliquot.amount: Weight in grams or volume in mL.
-annotations.aliquot.analyte_type: Text term that represents the kind of molecular
-  specimen analyte.
-annotations.aliquot.batch_id: GDC submission batch indicator. It is unique within
-  the context of a project.
-annotations.aliquot.concentration: Numeric value that represents the concentration
-  of an analyte or aliquot extracted from the sample or sample portion, measured in
-  milligrams per milliliter.
-annotations.aliquot.created_datetime: A combination of date and time of day in the
-  form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.aliquot.no_matched_normal_low_pass_wgs: There will be no matched normal
-  low pass WGS aliquots for this case that can be used for variant calling purposes.
-  The GDC may elect to use a single tumor calling pipeline to process this data.
-annotations.aliquot.no_matched_normal_targeted_sequencing: There will be no matched
-  normal Targeted Sequencing aliquots for this case that can be used for variant calling
-  purposes. The GDC may elect to use a single tumor calling pipeline to process this
-  data.
-annotations.aliquot.no_matched_normal_wgs: There will be no matched normal WGS aliquots
-  for this case that can be used for variant calling purposes. The GDC may elect to
-  use a single tumor calling pipeline to process this data.
-annotations.aliquot.no_matched_normal_wxs: There will be no matched normal WXS aliquots
-  for this case that can be used for variant calling purposes. The GDC may elect to
-  use a single tumor calling pipeline to process this data.
-annotations.aliquot.project_id: Unique ID for any specific defined piece of work that
-  is undertaken or attempted to meet a single requirement.
-annotations.aliquot.selected_normal_low_pass_wgs: Denotes which low-pass WGS normal
-  aliquot the submitter prefers to use for variant calling. Only one normal per experimental
-  strategy per case can be selected.
-annotations.aliquot.selected_normal_targeted_sequencing: Denotes which targeted_sequencing
-  normal aliquot the submitter prefers to use for variant calling. Only one normal
-  per experimental strategy per case can be selected.
-annotations.aliquot.selected_normal_wgs: Denotes which WGS normal aliquot the submitter
-  prefers to use for variant calling. Only one normal per experimental strategy per
-  case can be selected.
-annotations.aliquot.selected_normal_wxs: Denotes which WXS normal aliquot the submitter
-  prefers to use for variant calling. Only one normal per experimental strategy per
-  case can be selected.
-annotations.aliquot.source_center: Name of the center that provided the item.
-annotations.aliquot.state: The current state of the object.
-annotations.aliquot.submitter_id: A project-specific identifier for a node. This property
-  is the calling card/nickname/alias for a unit of submission. It can be used in place
-  of the uuid for identifying or recalling a node.
-annotations.aliquot.updated_datetime: A combination of date and time of day in the
-  form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.analyte.a260_a280_ratio: Numeric value that represents the sample ratio
-  of nucleic acid absorbance at 260 nm and 280 nm, used to determine a measure of
-  DNA purity.
-annotations.analyte.amount: Weight in grams or volume in mL.
-annotations.analyte.analyte_quantity: The quantity in micrograms (ug) of the analyte(s)
-  derived from the analyte(s) shipped for sequencing and characterization.
-annotations.analyte.analyte_type: Text term that represents the kind of molecular
-  specimen analyte.
-annotations.analyte.analyte_volume: "The volume in microliters (ul) of the analyte(s)\
-  \ shipped for sequencing and\n characterization."
-annotations.analyte.batch_id: GDC submission batch indicator. It is unique within
-  the context of a project.
-annotations.analyte.concentration: Numeric value that represents the concentration
-  of an analyte or aliquot extracted from the sample or sample portion, measured in
-  milligrams per milliliter.
-annotations.analyte.created_datetime: A combination of date and time of day in the
-  form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.analyte.dna_integrity_number: An assessment of the amount of fragmentation
-  in a genomic DNA sample. It is derived by an algorithm that assesses the distribution
-  of signal across the size range and generates a calculated integrity number.
-annotations.analyte.experimental_protocol_type: The type of experiment used to extract
-  the analyte.
-annotations.analyte.normal_tumor_genotype_snp_match: Text term that represents whether
-  or not the genotype of the normal tumor matches or if the data is not available.
-annotations.analyte.project_id: Unique ID for any specific defined piece of work that
-  is undertaken or attempted to meet a single requirement.
-annotations.analyte.ribosomal_rna_28s_16s_ratio: The 28S/18S ribosomal RNA band ratio
-  used to assess the quality of total RNA.
-annotations.analyte.ribosomal_rna_28s_18s_ratio: The 28S/18S ribosomal RNA band ratio
-  used to assess the quality of total RNA.
-annotations.analyte.rna_integrity_number: A numerical assessment of the integrity
-  of RNA based on the entire electrophoretic trace of the RNA sample, including the
-  presence or absence of degradation products.
-annotations.analyte.spectrophotometer_method: Name of the method used to determine
-  the concentration of purified nucleic acid within a solution.
-annotations.analyte.state: The current state of the object.
-annotations.analyte.submitter_id: A project-specific identifier for a node. This property
-  is the calling card/nickname/alias for a unit of submission. It can be used in place
-  of the uuid for identifying or recalling a node.
-annotations.analyte.updated_datetime: A combination of date and time of day in the
-  form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.analyte.well_number: Numeric value that represents the well location within
-  a plate for the analyte or aliquot from the sample.
-annotations.annotation.batch_id: GDC submission batch indicator. It is unique within
-  the context of a project.
-annotations.annotation.created_datetime: A combination of date and time of day in
-  the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.annotation.error_type:
-annotations.annotation.file_name:
-annotations.annotation.file_size:
-annotations.annotation.file_state:
-annotations.annotation.md5sum:
-annotations.annotation.project_id: Unique ID for any specific defined piece of work
-  that is undertaken or attempted to meet a single requirement.
-annotations.annotation.state: The current state of the object.
-annotations.annotation.state_comment:
-annotations.annotation.submitter_id: A project-specific identifier for a node. This
-  property is the calling card/nickname/alias for a unit of submission. It can be
-  used in place of the uuid for identifying or recalling a node.
-annotations.annotation.updated_datetime: A combination of date and time of day in
-  the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.case.batch_id: GDC submission batch indicator. It is unique within the
-  context of a project.
-annotations.case.consent_type: The text term used to describe the type of consent
-  obtain from the subject for participation in the study.
-annotations.case.created_datetime: A combination of date and time of day in the form
-  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.case.days_to_consent: Number of days between the date used for index and
-  the date the subject consent was obtained for participation in the study.
-annotations.case.days_to_lost_to_followup: The number of days between the date used
-  for index and to the date the patient was lost to follow-up.
-annotations.case.disease_type: The text term used to describe the type of malignant
-  disease, as categorized by the World Health Organization's (WHO) International Classification
-  of Diseases for Oncology (ICD-O).
-annotations.case.index_date: The text term used to describe the reference or anchor
-  date used when for date obfuscation, where a single date is obscurred by creating
-  one or more date ranges in relation to this date.
-annotations.case.lost_to_followup: The yes/no/unknown indicator used to describe whether
-  a patient was unable to be contacted or seen for follow-up information.
-annotations.case.primary_site: The text term used to describe the primary site of
-  disease, as categorized by the World Health Organization's (WHO) International Classification
-  of Diseases for Oncology (ICD-O). This categorization groups cases into general
-  categories. Reference tissue_or_organ_of_origin on the diagnosis node for more specific
-  primary sites of disease.
-annotations.case.project_id: Unique ID for any specific defined piece of work that
-  is undertaken or attempted to meet a single requirement.
-annotations.case.state: The current state of the object.
-annotations.case.submitter_id: A project-specific identifier for a node. This property
-  is the calling card/nickname/alias for a unit of submission. It can be used in place
-  of the uuid for identifying or recalling a node.
-annotations.case.updated_datetime: A combination of date and time of day in the form
-  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.file.batch_id: GDC submission batch indicator. It is unique within the
-  context of a project.
-annotations.file.created_datetime: A combination of date and time of day in the form
-  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.file.error_type: Type of error for the data file object.
-annotations.file.file_name: The name (or part of a name) of a file (of any type).
-annotations.file.file_size: The size of the data file (object) in bytes.
-annotations.file.file_state: The current state of the data file object.
-annotations.file.md5sum: The 128-bit hash value expressed as a 32 digit hexadecimal
-  number (in lower case) used as a file's digital fingerprint.
-annotations.file.project_id: Unique ID for any specific defined piece of work that
-  is undertaken or attempted to meet a single requirement.
-annotations.file.state: The current state of the object.
-annotations.file.state_comment: Optional comment about why the file is in the current
-  state, mainly for invalid state.
-annotations.file.submitter_id: A project-specific identifier for a node. This property
-  is the calling card/nickname/alias for a unit of submission. It can be used in place
-  of the uuid for identifying or recalling a node.
-annotations.file.updated_datetime: A combination of date and time of day in the form
-  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.portion.batch_id: GDC submission batch indicator. It is unique within
-  the context of a project.
-annotations.portion.created_datetime: A combination of date and time of day in the
-  form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.portion.creation_datetime: The datetime of portion creation encoded as
-  seconds from epoch.
-annotations.portion.is_ffpe: Indicator to signify whether or not the tissue sample
-  was fixed in formalin and embedded in paraffin (FFPE).
-annotations.portion.portion_number: Numeric value that represents the sequential number
-  assigned to a portion of the sample.
-annotations.portion.project_id: Unique ID for any specific defined piece of work that
-  is undertaken or attempted to meet a single requirement.
-annotations.portion.state: The current state of the object.
-annotations.portion.submitter_id: A project-specific identifier for a node. This property
-  is the calling card/nickname/alias for a unit of submission. It can be used in place
-  of the uuid for identifying or recalling a node.
-annotations.portion.updated_datetime: A combination of date and time of day in the
-  form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.portion.weight: Numeric value that represents the sample portion weight,
+..batch_id: GDC submission batch indicator. It is unique within the context of a project.
+..biospecimen_anatomic_site: Text term that represents the name of the organ or tissue
+  site of the submitted sample.
+..biospecimen_laterality: For tumors in paired organs, designates the side on which
+  the specimen was obtained.
+..catalog_reference: HCMI catalog reference number for cancer model.
+..collection_event: The event triggering collection of the sample
+..composition: Text term that represents the cellular composition of the sample.
+..created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+..creation_datetime: The datetime of portion creation encoded as seconds from epoch.
+..current_weight: Numeric value that represents the current weight of the sample,
   measured in milligrams.
-annotations.project.awg_review: Indicates that the project is an AWG project.
-annotations.project.code: Project code
-annotations.project.dbgap_accession_number: The dbgap accession number for the project.
-annotations.project.disease_type: Full name for the project
-annotations.project.in_review: Indicates that the project is under review by the submitter.
-  Upload and data modification is disabled.
-annotations.project.intended_release_date: Tracks a Project's intended release date.
-annotations.project.is_legacy: Indicates whether a project will appear in the Legacy
-  Archive.
-annotations.project.name: Display name for the project
-annotations.project.primary_site: Primary site for the project
-annotations.project.program.dbgap_accession_number: The dbgap accession number provided
-  for the program.
-annotations.project.program.name: Full name/title of the program.
-annotations.project.releasable: A project can only be released by the user when `releasable`
-  is true.
-annotations.project.release_requested: User requests that the GDC release the project.
-  Release can only be requested if the project is releasable.
-annotations.project.released: To release a project is to tell the GDC to include all
-  submitted entities in the next GDC index.
-annotations.project.request_submission: Indicates that the user has requested submission
-  to the GDC for harmonization.
-annotations.project.state: The possible states a project can be in.  All but `open`
-  are equivalent to some type of locked state.
-annotations.project.submission_enabled: Indicates if submission to a project is allowed.
-annotations.sample.batch_id: GDC submission batch indicator. It is unique within the
-  context of a project.
-annotations.sample.biospecimen_anatomic_site: Text term that represents the name of
-  the organ or tissue site of the submitted sample.
-annotations.sample.biospecimen_laterality: For tumors in paired organs, designates
-  the side on which the specimen was obtained.
-annotations.sample.catalog_reference: HCMI catalog reference number for cancer model.
-annotations.sample.created_datetime: A combination of date and time of day in the
-  form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.sample.current_weight: Numeric value that represents the current weight
-  of the sample, measured in milligrams.
-annotations.sample.days_to_collection: The number of days from the index date to the
-  date a sample was received by the Biospecimen Core Resource (BCR) or other center
-  for processing.
-annotations.sample.days_to_sample_procurement: The number of days from the index date
-  to the date a patient underwent a procedure (e.g. surgical resection) to yield or
-  remove from the patient a sample that was eventually used for research.
-annotations.sample.diagnosis_pathologically_confirmed: The histologic description
-  of tissue or cells confirmed by a pathology review of frozen or formalin fixed slide(s)
-  completed after the diagnostic pathology review of the tumor sample used to extract
+..days_to_collection: The number of days from the index date to the date a sample
+  was received by the Biospecimen Core Resource (BCR) or other center for processing.
+..days_to_sample_procurement: The number of days from the index date to the date a
+  patient underwent a procedure (e.g. surgical resection) to yield or remove from
+  the patient a sample that was eventually used for research.
+..diagnosis_pathologically_confirmed: The histologic description of tissue or cells
+  confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
+  the diagnostic pathology review of the tumor sample used to extract analyte(s).
+..distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
+  and the normal control tissue that was procured for matching normal DNA.
+..distributor_reference: Distributor reference number for cancer model.
+..freezing_method: Text term that represents the method used for freezing the sample.
+..growth_rate: Rate at which the model grows, measured as hours to time to split.
+..initial_weight: Numeric value that represents the initial weight of the sample,
+  measured in milligrams.
+..intermediate_dimension: Intermediate dimension of the sample, in millimeters.
+..is_ffpe: Indicator to signify whether or not the tissue sample was fixed in formalin
+  and embedded in paraffin (FFPE).
+..longest_dimension: Numeric value that represents the longest dimension of the sample,
+  measured in millimeters.
+..method_of_sample_procurement: The method used to procure the sample used to extract
   analyte(s).
-annotations.sample.distance_normal_to_tumor: Text term to signify the distance between
-  the tumor tissue and the normal control tissue that was procured for matching normal
-  DNA.
-annotations.sample.distributor_reference: Distributor reference number for cancer
+..oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
+  Temperature (OCT) compound.
+..passage_count: Number of passages (splits) between the original tissue and this
   model.
-annotations.sample.freezing_method: Text term that represents the method used for
-  freezing the sample.
-annotations.sample.growth_rate: Rate at which the model grows, measured as hours to
-  time to split.
-annotations.sample.initial_weight: Numeric value that represents the initial weight
-  of the sample, measured in milligrams.
-annotations.sample.intermediate_dimension: Intermediate dimension of the sample, in
-  millimeters.
-annotations.sample.longest_dimension: Numeric value that represents the longest dimension
-  of the sample, measured in millimeters.
-annotations.sample.method_of_sample_procurement: The method used to procure the sample
-  used to extract analyte(s).
-annotations.sample.passage_count: Number of passages (splits) between the original
-  tissue and this model.
-annotations.sample.pathology_report_uuid: UUID of the related pathology report.
-annotations.sample.preservation_method: Text term that represents the method used
-  to preserve the sample.
-annotations.sample.project_id: Unique ID for any specific defined piece of work that
-  is undertaken or attempted to meet a single requirement.
-annotations.sample.sample_ordinal: A number describing the samples place in an ordered
-  sequence.
-annotations.sample.sample_type: Text term to describe the source of a biospecimen
-  used for a laboratory test.
-annotations.sample.shortest_dimension: Numeric value that represents the shortest
-  dimension of the sample, measured in millimeters.
-annotations.sample.specimen_type: The type of a material sample taken from a biological
-  entity for testing, diagnostic, propagation, treatment or research purposes. This
-  includes particular types of cellular molecules, cells, tissues, organs, body fluids,
-  embryos, and body excretory substances.
-annotations.sample.state: The current state of the object.
-annotations.sample.submitter_id: A project-specific identifier for a node. This property
-  is the calling card/nickname/alias for a unit of submission. It can be used in place
-  of the uuid for identifying or recalling a node.
-annotations.sample.time_between_clamping_and_freezing: Numeric representation of the
-  elapsed time between the surgical clamping of blood supply and freezing of the sample,
-  measured in minutes.
-annotations.sample.time_between_excision_and_freezing: Numeric representation of the
-  elapsed time between the excision and freezing of the sample, measured in minutes.
-annotations.sample.tissue_collection_type: The text term used to describe the type
-  of collection used to obtain tissue.
-annotations.sample.tissue_type: Text term that represents a description of the kind
-  of tissue collected with respect to disease status or proximity to tumor tissue.
-annotations.sample.tumor_code_id: BCR-defined id code for the tumor sample.
-annotations.sample.tumor_descriptor: Text that describes the kind of disease present
-  in the tumor specimen as related to a specific timepoint.
-annotations.sample.updated_datetime: A combination of date and time of day in the
-  form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.slide.batch_id: GDC submission batch indicator. It is unique within the
-  context of a project.
-annotations.slide.bone_marrow_malignant_cells: The text term used to indicate whether
-  there are malignant cells in the bone marrow.
-annotations.slide.created_datetime: A combination of date and time of day in the form
-  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-annotations.slide.number_proliferating_cells: Numeric value that represents the count
-  of proliferating cells determined during pathologic review of the sample slide(s).
-annotations.slide.percent_eosinophil_infiltration: Numeric value to represent the
-  percentage of infiltration by eosinophils in a tumor sample or specimen.
-annotations.slide.percent_follicular_component: Numeric value that represents the
-  percentage of follicular features found in a specific tissue sample.
-annotations.slide.percent_granulocyte_infiltration: Numeric value to represent the
-  percentage of infiltration by granulocytes in a tumor sample or specimen.
-annotations.slide.percent_inflam_infiltration: Numeric value to represent local response
-  to cellular injury, marked by capillary dilatation, edema and leukocyte infiltration;
-  clinically, inflammation is manifest by reddness, heat, pain, swelling and loss
-  of function, with the need to heal damaged tissue.
-annotations.slide.percent_lymphocyte_infiltration: Numeric value to represent the
-  percentage of infiltration by lymphocytes in a solid tissue sample or specimen.
-annotations.slide.percent_monocyte_infiltration: Numeric value to represent the percentage
-  of monocyte infiltration in a sample or specimen.
-annotations.slide.percent_necrosis: Numeric value to represent the percentage of cell
-  death in a malignant tumor sample or specimen.
-annotations.slide.percent_neutrophil_infiltration: Numeric value to represent the
-  percentage of infiltration by neutrophils in a tumor sample or specimen.
-annotations.slide.percent_normal_cells: Numeric value to represent the percentage
-  of normal cell content in a malignant tumor sample or specimen.
-annotations.slide.percent_rhabdoid_features: Numeric value that represents the percentage
-  of rhabdoid features found in a specific tissue sample.
-annotations.slide.percent_sarcomatoid_features: Numeric value that represents the
-  percentage of sarcomatoid features found in a specific tissue sample.
-annotations.slide.percent_stromal_cells: Numeric value to represent the percentage
-  of reactive cells that are present in a malignant tumor sample or specimen but are
-  not malignant such as fibroblasts, vascular structures, etc.
-annotations.slide.percent_tumor_cells: Numeric value that represents the percentage
-  of infiltration by tumor cells in a sample.
-annotations.slide.percent_tumor_nuclei: Numeric value to represent the percentage
-  of tumor nuclei in a malignant neoplasm sample or specimen.
-annotations.slide.project_id: Unique ID for any specific defined piece of work that
-  is undertaken or attempted to meet a single requirement.
-annotations.slide.prostatic_chips_positive_count: The text term used to describe the
-  number of positive prostatic chips, which are generated from transurethral resection
-  of the prostate (TURP) procedures and are generally used for relieving urinary obstruction
-  due to nodular hyperplasia of the prostate (benign prostatic hyperplasia).
-annotations.slide.prostatic_chips_total_count: The text term used to describe the
-  total number of prostatic chips, which are generated from transurethral resection
-  of the prostate (TURP) procedures and are generally used for relieving urinary obstruction
-  due to nodular hyperplasia of the prostate (benign prostatic hyperplasia).
-annotations.slide.prostatic_involvement_percent: Numeric value that represents the
-  percentage of prostatic involvement found in a specific tissue sample.
-annotations.slide.section_location: Tissue source of the slide.
-annotations.slide.state: The current state of the object.
-annotations.slide.submitter_id: A project-specific identifier for a node. This property
-  is the calling card/nickname/alias for a unit of submission. It can be used in place
-  of the uuid for identifying or recalling a node.
-annotations.slide.tissue_microarray_coordinates: The alphanumeric term used to describe
-  the coordinates of a specific tissue located on a tissue microarray slide.
-annotations.slide.updated_datetime: A combination of date and time of day in the form
-  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.annotations.batch_id: GDC submission batch indicator. It is unique within the
-  context of a project.
-cases.annotations.category: Top level characterization of the annotation.
-cases.annotations.classification: Top level classification of the annotation.
-cases.annotations.created_datetime: A combination of date and time of day in the form
-  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.annotations.creator: Name of the person or entity responsible for the creation
-  of the annotation.
-cases.annotations.legacy_created_datetime: A combination of date and time of day in
-  the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.annotations.legacy_updated_datetime: A combination of date and time of day in
-  the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.annotations.notes: Open entry for any further description or characterization
-  of the data.
-cases.annotations.project_id: Unique ID for any specific defined piece of work that
-  is undertaken or attempted to meet a single requirement.
-cases.annotations.state: The current state of the object.
-cases.annotations.status: Status of the annotation.
-cases.annotations.submitter_id: A project-specific identifier for a node. This property
-  is the calling card/nickname/alias for a unit of submission. It can be used in place
-  of the uuid for identifying or recalling a node.
-cases.annotations.updated_datetime: A combination of date and time of day in the form
-  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+..pathology_report_uuid: UUID of the related pathology report.
+..portion_number: Numeric value that represents the sequential number assigned to
+  a portion of the sample.
+..preservation_method: Text term that represents the method used to preserve the sample.
+..project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+..sample_ordinal: A number describing the samples place in an ordered sequence.
+..sample_type: Text term to describe the source of a biospecimen used for a laboratory
+  test.
+..sample_type_id: The accompanying sample type id for the sample type.
+..shortest_dimension: Numeric value that represents the shortest dimension of the
+  sample, measured in millimeters.
+..specimen_type: The type of a material sample taken from a biological entity for
+  testing, diagnostic, propagation, treatment or research purposes. This includes
+  particular types of cellular molecules, cells, tissues, organs, body fluids, embryos,
+  and body excretory substances.
+..state: The current state of the object.
+..submitter_id: A project-specific identifier for a node. This property is the calling
+  card/nickname/alias for a unit of submission. It can be used in place of the uuid
+  for identifying or recalling a node.
+..time_between_clamping_and_freezing: Numeric representation of the elapsed time between
+  the surgical clamping of blood supply and freezing of the sample, measured in minutes.
+..time_between_excision_and_freezing: Numeric representation of the elapsed time between
+  the excision and freezing of the sample, measured in minutes.
+..tissue_collection_type: The text term used to describe the type of collection used
+  to obtain tissue.
+..tissue_type: Text term that represents a description of the kind of tissue collected
+  with respect to disease status or proximity to tumor tissue.
+..tumor_code: Diagnostic tumor code of the tissue sample source.
+..tumor_code_id: BCR-defined id code for the tumor sample.
+..tumor_descriptor: Text that describes the kind of disease present in the tumor specimen
+  as related to a specific timepoint.
+..updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+..weight: Numeric value that represents the sample portion weight, measured in milligrams.
+a.batch_id: GDC submission batch indicator. It is unique within the context of a project.
+a.biospecimen_anatomic_site: Text term that represents the name of the organ or tissue
+  site of the submitted sample.
+a.biospecimen_laterality: For tumors in paired organs, designates the side on which
+  the specimen was obtained.
+a.catalog_reference: HCMI catalog reference number for cancer model.
+a.collection_event: The event triggering collection of the sample
+a.composition: Text term that represents the cellular composition of the sample.
+a.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+a.creation_datetime: The datetime of portion creation encoded as seconds from epoch.
+a.current_weight: Numeric value that represents the current weight of the sample,
+  measured in milligrams.
+a.days_to_collection: The number of days from the index date to the date a sample
+  was received by the Biospecimen Core Resource (BCR) or other center for processing.
+a.days_to_sample_procurement: The number of days from the index date to the date a
+  patient underwent a procedure (e.g. surgical resection) to yield or remove from
+  the patient a sample that was eventually used for research.
+a.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
+  confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
+  the diagnostic pathology review of the tumor sample used to extract analyte(s).
+a.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
+  and the normal control tissue that was procured for matching normal DNA.
+a.distributor_reference: Distributor reference number for cancer model.
+a.freezing_method: Text term that represents the method used for freezing the sample.
+a.growth_rate: Rate at which the model grows, measured as hours to time to split.
+a.initial_weight: Numeric value that represents the initial weight of the sample,
+  measured in milligrams.
+a.intermediate_dimension: Intermediate dimension of the sample, in millimeters.
+a.is_ffpe: Indicator to signify whether or not the tissue sample was fixed in formalin
+  and embedded in paraffin (FFPE).
+a.longest_dimension: Numeric value that represents the longest dimension of the sample,
+  measured in millimeters.
+a.method_of_sample_procurement: The method used to procure the sample used to extract
+  analyte(s).
+a.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
+  Temperature (OCT) compound.
+a.passage_count: Number of passages (splits) between the original tissue and this
+  model.
+a.pathology_report_uuid: UUID of the related pathology report.
+a.portion_number: Numeric value that represents the sequential number assigned to
+  a portion of the sample.
+a.preservation_method: Text term that represents the method used to preserve the sample.
+a.project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+a.sample_ordinal: A number describing the samples place in an ordered sequence.
+a.sample_type: Text term to describe the source of a biospecimen used for a laboratory
+  test.
+a.sample_type_id: The accompanying sample type id for the sample type.
+a.shortest_dimension: Numeric value that represents the shortest dimension of the
+  sample, measured in millimeters.
+a.specimen_type: The type of a material sample taken from a biological entity for
+  testing, diagnostic, propagation, treatment or research purposes. This includes
+  particular types of cellular molecules, cells, tissues, organs, body fluids, embryos,
+  and body excretory substances.
+a.state: The current state of the object.
+a.submitter_id: A project-specific identifier for a node. This property is the calling
+  card/nickname/alias for a unit of submission. It can be used in place of the uuid
+  for identifying or recalling a node.
+a.time_between_clamping_and_freezing: Numeric representation of the elapsed time between
+  the surgical clamping of blood supply and freezing of the sample, measured in minutes.
+a.time_between_excision_and_freezing: Numeric representation of the elapsed time between
+  the excision and freezing of the sample, measured in minutes.
+a.tissue_collection_type: The text term used to describe the type of collection used
+  to obtain tissue.
+a.tissue_type: Text term that represents a description of the kind of tissue collected
+  with respect to disease status or proximity to tumor tissue.
+a.tumor_code: Diagnostic tumor code of the tissue sample source.
+a.tumor_code_id: BCR-defined id code for the tumor sample.
+a.tumor_descriptor: Text that describes the kind of disease present in the tumor specimen
+  as related to a specific timepoint.
+a.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+a.weight: Numeric value that represents the sample portion weight, measured in milligrams.
+c.batch_id: GDC submission batch indicator. It is unique within the context of a project.
+c.biospecimen_anatomic_site: Text term that represents the name of the organ or tissue
+  site of the submitted sample.
+c.biospecimen_laterality: For tumors in paired organs, designates the side on which
+  the specimen was obtained.
+c.catalog_reference: HCMI catalog reference number for cancer model.
+c.collection_event: The event triggering collection of the sample
+c.composition: Text term that represents the cellular composition of the sample.
+c.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+c.creation_datetime: The datetime of portion creation encoded as seconds from epoch.
+c.current_weight: Numeric value that represents the current weight of the sample,
+  measured in milligrams.
+c.days_to_collection: The number of days from the index date to the date a sample
+  was received by the Biospecimen Core Resource (BCR) or other center for processing.
+c.days_to_sample_procurement: The number of days from the index date to the date a
+  patient underwent a procedure (e.g. surgical resection) to yield or remove from
+  the patient a sample that was eventually used for research.
+c.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
+  confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
+  the diagnostic pathology review of the tumor sample used to extract analyte(s).
+c.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
+  and the normal control tissue that was procured for matching normal DNA.
+c.distributor_reference: Distributor reference number for cancer model.
+c.freezing_method: Text term that represents the method used for freezing the sample.
+c.growth_rate: Rate at which the model grows, measured as hours to time to split.
+c.initial_weight: Numeric value that represents the initial weight of the sample,
+  measured in milligrams.
+c.intermediate_dimension: Intermediate dimension of the sample, in millimeters.
+c.is_ffpe: Indicator to signify whether or not the tissue sample was fixed in formalin
+  and embedded in paraffin (FFPE).
+c.longest_dimension: Numeric value that represents the longest dimension of the sample,
+  measured in millimeters.
+c.method_of_sample_procurement: The method used to procure the sample used to extract
+  analyte(s).
+c.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
+  Temperature (OCT) compound.
+c.passage_count: Number of passages (splits) between the original tissue and this
+  model.
+c.pathology_report_uuid: UUID of the related pathology report.
+c.portion_number: Numeric value that represents the sequential number assigned to
+  a portion of the sample.
+c.preservation_method: Text term that represents the method used to preserve the sample.
+c.project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+c.sample_ordinal: A number describing the samples place in an ordered sequence.
+c.sample_type: Text term to describe the source of a biospecimen used for a laboratory
+  test.
+c.sample_type_id: The accompanying sample type id for the sample type.
+c.shortest_dimension: Numeric value that represents the shortest dimension of the
+  sample, measured in millimeters.
+c.specimen_type: The type of a material sample taken from a biological entity for
+  testing, diagnostic, propagation, treatment or research purposes. This includes
+  particular types of cellular molecules, cells, tissues, organs, body fluids, embryos,
+  and body excretory substances.
+c.state: The current state of the object.
+c.submitter_id: A project-specific identifier for a node. This property is the calling
+  card/nickname/alias for a unit of submission. It can be used in place of the uuid
+  for identifying or recalling a node.
+c.time_between_clamping_and_freezing: Numeric representation of the elapsed time between
+  the surgical clamping of blood supply and freezing of the sample, measured in minutes.
+c.time_between_excision_and_freezing: Numeric representation of the elapsed time between
+  the excision and freezing of the sample, measured in minutes.
+c.tissue_collection_type: The text term used to describe the type of collection used
+  to obtain tissue.
+c.tissue_type: Text term that represents a description of the kind of tissue collected
+  with respect to disease status or proximity to tumor tissue.
+c.tumor_code: Diagnostic tumor code of the tissue sample source.
+c.tumor_code_id: BCR-defined id code for the tumor sample.
+c.tumor_descriptor: Text that describes the kind of disease present in the tumor specimen
+  as related to a specific timepoint.
+c.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+c.weight: Numeric value that represents the sample portion weight, measured in milligrams.
 cases.case.batch_id: GDC submission batch indicator. It is unique within the context
   of a project.
 cases.case.consent_type: The text term used to describe the type of consent obtain
@@ -389,8 +243,8 @@ cases.case.submitter_id: A project-specific identifier for a node. This property
   the calling card/nickname/alias for a unit of submission. It can be used in place
   of the uuid for identifying or recalling a node.
 cases.case.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.demographic.age_at_index: The patient's age (in years) on the reference or anchor
-  date used during date obfuscation.
+cases.demographic.age_at_index: Subject's age at the time of first therapy for multiple
+  myeloma diagnosis.
 cases.demographic.age_is_obfuscated: The age or other properties related to the patient's
   age have been modified for compliance reasons. The actual age may differ from what
   was reported in order to comply with the Health Insurance Portability and Accountability
@@ -413,29 +267,21 @@ cases.demographic.days_to_death: Number of days between the date used for index 
   the date from a person's date of death represented as a calculated number of days.
 cases.demographic.education_level: The years of schooling completed in graded public,
   private, or parochial schools, and in colleges, universities, or professional schools.
-cases.demographic.ethnicity: An individual's self-described social and cultural grouping,
-  specifically whether an individual describes themselves as Hispanic or Latino. The
-  provided values are based on the categories defined by the U.S. Office of Management
-  and Business and used by the U.S. Census Bureau.
-cases.demographic.gender: 'Text designations that identify gender. Gender is described
-  as the assemblage of properties that distinguish people on the basis of their societal
-  roles. [Explanatory Comment 1: Identification of gender is based upon self-report
-  and may come from a form, questionnaire, interview, etc.]'
+cases.demographic.ethnicity: Subject's ethnicity that was collected at baseline, study
+  enrollment, for the US cohort only.
+cases.demographic.gender: Subject's sex that was collected at baseline, study enrollment.
 cases.demographic.marital_status: A demographic parameter indicating a person's current
   conjugal status.
 cases.demographic.occupation_duration_years: The number of years a patient worked
   in a specific occupation.
 cases.demographic.population_group: A group of individuals united by a common factor
-  (e.g., geographic location, ethnicity, disease, age, sex).
+  (e.g., geographic location, ethnicity, disease, age, gender).
+cases.demographic.premature_at_birth: The yes/no/unknown indicator used to describe
+  whether the patient was premature (less than 37 weeks gestation) at birth.
 cases.demographic.project_id: Unique ID for any specific defined piece of work that
   is undertaken or attempted to meet a single requirement.
-cases.demographic.race: An arbitrary classification of a taxonomic group that is a
-  division of a species. It usually arises as a consequence of geographical isolation
-  within a species and is characterized by shared heredity, physical attributes and
-  behavior, and in the case of humans, by common history, nationality, or geographic
-  distribution. The provided values are based on the categories defined by the U.S.
-  Office of Management and Business and used by the U.S. Census Bureau.
-cases.demographic.sex_at_birth: A textual description of a person's sex at birth.
+cases.demographic.race: Subject's race that was collected at baseline, study enrollment,
+  for the US cohort only.
 cases.demographic.state: The current state of the object.
 cases.demographic.submitter_id: A project-specific identifier for a node. This property
   is the calling card/nickname/alias for a unit of submission. It can be used in place
@@ -444,16 +290,20 @@ cases.demographic.updated_datetime: A combination of date and time of day in the
   [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.demographic.vital_status: The survival state of the person registered on the
   protocol.
+cases.demographic.weeks_gestation_at_birth: Numeric value used to describe the number
+  of weeks starting from the approximate date of the biological mother's last menstrual
+  period and ending with the birth of the patient.
 cases.demographic.year_of_birth: Numeric value to represent the calendar year in which
   an individual was born.
-cases.demographic.year_of_death: Numeric value to represent the year of the death
-  of an individual.
+cases.demographic.year_of_death: The year component of the subject's date of death,
+  if applicable. In a de-identified dataset, this variable will help with sequencing
+  events.
 cases.diagnoses.adrenal_hormone: Indicates the presence of the adrenal hormone. The
   adrenal hormone is made from cholesterol and protein produced by the adrenal glands
   and regulate electrolyte balance, blood pressure, inflammation, blood sugar balance,
   and immune system control.
-cases.diagnoses.age_at_diagnosis: Age at the time of diagnosis expressed in number
-  of days since birth.
+cases.diagnoses.age_at_diagnosis: Age at the time of study entry/diagnosis expressed
+  in number of days since birth.
 cases.diagnoses.ajcc_clinical_m: Extent of the distant metastasis for the cancer based
   on evidence obtained from clinical assessment parameters determined prior to treatment.
 cases.diagnoses.ajcc_clinical_n: Extent of the regional lymph node involvement for
@@ -495,33 +345,13 @@ cases.diagnoses.ann_arbor_extranodal_involvement: Indicator that identifies whet
   site.
 cases.diagnoses.ann_arbor_pathologic_stage: The text term used to describe the pathologic
   classification of lymphoma, as defined by the Ann Arbor Lymphoma Staging System.
-cases.diagnoses.annotations.batch_id: GDC submission batch indicator. It is unique
-  within the context of a project.
-cases.diagnoses.annotations.category: Top level characterization of the annotation.
-cases.diagnoses.annotations.classification: Top level classification of the annotation.
-cases.diagnoses.annotations.created_datetime: A combination of date and time of day
-  in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.diagnoses.annotations.creator: Name of the person or entity responsible for
-  the creation of the annotation.
-cases.diagnoses.annotations.legacy_created_datetime: A combination of date and time
-  of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.diagnoses.annotations.legacy_updated_datetime: A combination of date and time
-  of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.diagnoses.annotations.notes: Open entry for any further description or characterization
-  of the data.
-cases.diagnoses.annotations.project_id: Unique ID for any specific defined piece of
-  work that is undertaken or attempted to meet a single requirement.
-cases.diagnoses.annotations.state: The current state of the object.
-cases.diagnoses.annotations.status: Status of the annotation.
-cases.diagnoses.annotations.submitter_id: A project-specific identifier for a node.
-  This property is the calling card/nickname/alias for a unit of submission. It can
-  be used in place of the uuid for identifying or recalling a node.
-cases.diagnoses.annotations.updated_datetime: A combination of date and time of day
-  in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.diagnoses.batch_id: GDC submission batch indicator. It is unique within the
   context of a project.
 cases.diagnoses.best_overall_response: The best improvement achieved throughout the
-  entire course of protocol treatment.
+  entire course of study period.
+cases.diagnoses.bmi_at_diagnosis: 'Subject''s body mass index (BMI) calculated from
+  height and weight recorded prior to first therapy for active  multiple myeloma diagnosis.
+  algorithm: (weight/(height*height))'
 cases.diagnoses.burkitt_lymphoma_clinical_variant: Burkitt's lymphoma categorization
   based on clinical features that differ from other forms of the same disease.
 cases.diagnoses.calgb_risk_group: A classification strategy for Acute Myeloid Leukemia
@@ -549,9 +379,9 @@ cases.diagnoses.contiguous_organ_invaded: The organ or contiguous site the disea
   migrated to from the primary site.
 cases.diagnoses.created_datetime: A combination of date and time of day in the form
   [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.diagnoses.days_to_best_overall_response: Number of days between the date used
-  for index and the date of the patient was thought to have the best overall response
-  to their disease.
+cases.diagnoses.days_to_best_overall_response: 'Number of days between the subject''s
+  date of first best response to therapy for  multiple myeloma and the  index date.
+  In a de-identified dataset, this variable will help with sequencing events. '
 cases.diagnoses.days_to_diagnosis: Number of days between the date used for index
   and the date the patient was diagnosed with the malignant disease.
 cases.diagnoses.days_to_last_follow_up: Time interval from the date of last follow
@@ -611,6 +441,8 @@ cases.diagnoses.figo_stage: The extent of a cervical or endometrial cancer withi
   Obstetrics (FIGO) stages.
 cases.diagnoses.figo_staging_edition_year: The text term used to describe the edition
   year of the FIGO staging system used to stage the patient's gynecologic tumor.
+cases.diagnoses.first_progressive_disease: Indicator that the subject has progressive
+  disease after initial treatment.
 cases.diagnoses.first_symptom_longest_duration: The length of time the first presenting
   symptom occurred that related to the diagnosis of the patient with cancer.
 cases.diagnoses.first_symptom_prior_to_diagnosis: Text term used to describe the patient's
@@ -663,7 +495,9 @@ cases.diagnoses.irs_stage: The text term used to describe the classification of 
   tumors, as defined by the Intergroup Rhabdomyosarcoma Study (IRS).
 cases.diagnoses.ishak_fibrosis_score: The text term used to describe the classification
   of the histopathologic degree of liver damage.
-cases.diagnoses.iss_stage: The multiple myeloma disease stage at diagnosis.
+cases.diagnoses.iss_stage: The multiple myeloma disease International Staging System
+  (ISS) stage at diagnosis that prognostically categorizes  the severity of multiple
+  myeloma based on routinely obtained lab values.
 cases.diagnoses.last_known_disease_status: Text term that describes the last known
   state or condition of an individual's neoplasm.
 cases.diagnoses.laterality: For tumors in paired organs, designates the side on which
@@ -683,11 +517,19 @@ cases.diagnoses.melanoma_known_primary: A melanoma which has metastasized from a
   primary anatomic site.
 cases.diagnoses.metastasis_at_diagnosis: The text term used to describe the extent
   of metastatic disease present at diagnosis.
+cases.diagnoses.metastasis_at_diagnosis_site: Text term to identify an anatomic site
+  in which metastatic disease involvement is found.
 cases.diagnoses.method_of_diagnosis: Text term used to describe the method used to
   confirm the patients malignant diagnosis.
+cases.diagnoses.micropapillary_features: The yes/no/unknown indicator used to describe
+  whether micropapillary features were determined to be present.
 cases.diagnoses.mitosis_karyorrhexis_index: Text term that represents the component
   of the International Neuroblastoma Pathology Classification (INPC) for mitosis-karyorrhexis
   index (MKI).
+cases.diagnoses.mitotic_count: The number of mitoses identified under the microscope
+  in tumors. The method of counting varies, according to the specific tumor examined.
+  Usually, the mitotic count is determined based on the number of mitoses per high
+  power field (40X) or 10 high power fields.
 cases.diagnoses.molecular_tests.aa_change: 'Alphanumeric value used to describe the
   amino acid change for a specific genetic variant. Example: R116Q.'
 cases.diagnoses.molecular_tests.aneuploidy: A chromosomal abnormality in which there
@@ -758,7 +600,7 @@ cases.diagnoses.molecular_tests.locus: The position of a gene or a chromosomal m
   The use of locus is sometimes restricted to mean regions of DNA that are expressed.
 cases.diagnoses.molecular_tests.mismatch_repair_mutation: The yes/no/unknown indicator
   used to describe whether the mutation included in molecular testing was known to
-  have an effect on the mismatch repair process.
+  have an affect on the mismatch repair process.
 cases.diagnoses.molecular_tests.mitotic_count: The number of mitoses identified under
   the microscope in tumors. The method of counting varies, according to the specific
   tumor examined. Usually, the mitotic count is determined based on the number of
@@ -832,6 +674,9 @@ cases.diagnoses.ovarian_specimen_status: The text term used to describe the phys
 cases.diagnoses.ovarian_surface_involvement: The text term that describes whether
   the surface tissue (outer boundary) of the ovary shows evidence of involvement or
   presence of cancer.
+cases.diagnoses.papillary_renal_cell_type: The text term used to describe the type
+  of papillary renal cell carcinoma characterized by the presence of papillae covered
+  by small cells with scant amount of cytoplasm.
 cases.diagnoses.pathology_details.additional_pathology_findings: A section header
   that includes additional pathologic findings.
 cases.diagnoses.pathology_details.anaplasia_present: Yes/no/unknown/not reported indicator
@@ -847,9 +692,6 @@ cases.diagnoses.pathology_details.bone_marrow_malignant_cells: The text term use
 cases.diagnoses.pathology_details.breslow_thickness: The number that describes the
   distance, in millimeters, between the upper layer of the epidermis and the deepest
   point of tumor penetration.
-cases.diagnoses.pathology_details.breslow_thickness_category: The number that describes
-  the distance, in millimeters, between the upper layer of the epidermis and the deepest
-  point of tumor penetration.
 cases.diagnoses.pathology_details.circumferential_resection_margin: Numeric value
   used to describe the non-peritonealised bare area of rectum, comprising anterior
   and posterior segments, when submitted as a surgical specimen resulting from excision
@@ -860,6 +702,11 @@ cases.diagnoses.pathology_details.consistent_pathology_review: Indicates whether
   recent review of tissue is consistent with a prior pathology review.
 cases.diagnoses.pathology_details.created_datetime: A combination of date and time
   of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+cases.diagnoses.pathology_details.d_im_flowcyt_pct_pc_in_bm_high: TK
+cases.diagnoses.pathology_details.d_im_flowcyt_pct_pc_in_bm_low: TK
+cases.diagnoses.pathology_details.d_im_flowcyt_pct_pc_in_pb_low: TK
+cases.diagnoses.pathology_details.d_im_morphology_percent_pc_in_bm: TK
+cases.diagnoses.pathology_details.d_im_morphology_percent_pc_in_pb: TK
 cases.diagnoses.pathology_details.days_to_pathology_detail: Number of days between
   the date used for index and the date a pathologic review of a specific sample or
   slide was performed.
@@ -874,7 +721,7 @@ cases.diagnoses.pathology_details.epithelioid_cell_percent_range: A quantitative
   present in a sample.
 cases.diagnoses.pathology_details.extracapsular_extension: The extension of malignant
   tissue situated outside of a specific capsule.
-cases.diagnoses.pathology_details.extracapsular_extension_present:
+cases.diagnoses.pathology_details.extracapsular_extension_present: null
 cases.diagnoses.pathology_details.extranodal_extension: Extension of a malignant neoplasm
   beyond the lymph node capsule.
 cases.diagnoses.pathology_details.extraocular_nodule_size: The size of the nodule
@@ -894,6 +741,8 @@ cases.diagnoses.pathology_details.histologic_progression_type: Text term to desc
   extracellular environment in tissues.
 cases.diagnoses.pathology_details.intratubular_germ_cell_neoplasia_present: Text term
   to indicate whether the intratubular germ cell neoplasm is present or absent.
+cases.diagnoses.pathology_details.keatsnfkb_index: TK
+cases.diagnoses.pathology_details.keatsprolif_index: TK
 cases.diagnoses.pathology_details.largest_extrapelvic_peritoneal_focus: The text term
   used to describe the diameter of the largest focus originating outside of the pelvic
   peritoneal region.
@@ -952,6 +801,8 @@ cases.diagnoses.pathology_details.peripancreatic_lymph_nodes_positive: Enumerate
   nodes determined to be positive.
 cases.diagnoses.pathology_details.peripancreatic_lymph_nodes_tested: The total number
   of peripancreatic lymph nodes tested for the presence of pancreatic cancer cells.
+cases.diagnoses.pathology_details.pi_pbl_call: TK
+cases.diagnoses.pathology_details.pi_pbl_index: TK
 cases.diagnoses.pathology_details.prcc_type: The type of papillary renal cell carcinoma.
   It is classified as type 1 or 2, based on the cytoplasmic volume and the thickness
   of the lining neoplastic cells.
@@ -1022,6 +873,8 @@ cases.diagnoses.pathology_details.tumor_thickness: A measurement of the thicknes
   of a sectioned slice (of tissue or mineral or other substance) in millimeters (mm).
 cases.diagnoses.pathology_details.tumor_width_measurement: The numerical measurement
   of tumor width.
+cases.diagnoses.pathology_details.uams70_call: TK
+cases.diagnoses.pathology_details.uams70_index: TK
 cases.diagnoses.pathology_details.updated_datetime: A combination of date and time
   of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.diagnoses.pathology_details.vascular_invasion_present: The yes/no indicator
@@ -1035,9 +888,13 @@ cases.diagnoses.pediatric_kidney_staging: A modified version of the Children's O
   Group (COG) National Wilms Tumor Study Group (NWTS) staging system.
 cases.diagnoses.peritoneal_fluid_cytological_status: The text term used to describe
   the malignant status of the peritoneal fluid determined by cytologic testing.
+cases.diagnoses.pregnant_at_diagnosis: The text term used to indicate whether the
+  patient was pregnant at the time they were diagnosed.
 cases.diagnoses.primary_diagnosis: Text term used to describe the patient's histologic
   diagnosis, as described by the World Health Organization's (WHO) International Classification
   of Diseases for Oncology (ICD-O).
+cases.diagnoses.primary_disease: Indicates whether the specific diagnosis represents
+  the disease that was the primary focus of the study.
 cases.diagnoses.primary_gleason_grade: The text term used to describe the primary
   Gleason score, which describes the pattern of cells making up the largest area of
   the tumor. The primary and secondary Gleason pattern grades are combined to determine
@@ -1049,9 +906,8 @@ cases.diagnoses.prior_malignancy: The yes/no/unknown indicator used to describe 
 cases.diagnoses.prior_treatment: A yes/no/unknown/not applicable indicator related
   to the administration of therapeutic agents received before the body specimen was
   collected.
-cases.diagnoses.progression_or_recurrence: Indicates whether a patient has a progression
-  or recurrence after initial treatment. This can include local, regional, or metastatic
-  disease.
+cases.diagnoses.progression_or_recurrence: Indicator that the subject has progressive
+  disease after initial treatment.
 cases.diagnoses.project_id: Unique ID for any specific defined piece of work that
   is undertaken or attempted to meet a single requirement.
 cases.diagnoses.residual_disease: Tumor cells that remain in the body following cancer
@@ -1153,8 +1009,12 @@ cases.diagnoses.treatments.therapeutic_target_level: Describes a specific target
   an administered treatment.
 cases.diagnoses.treatments.timepoint_category: Category describing a specific point
   in the time continuum, including those established relative to an event.
+cases.diagnoses.treatments.treatment_anatomic_site: The anatomic site or field targeted
+  by a treatment regimen or single agent therapy.
 cases.diagnoses.treatments.treatment_anatomic_sites: The anatomic site or field targeted
   by a treatment regimen or single agent therapy.
+cases.diagnoses.treatments.treatment_arm: Text term used to describe the treatment
+  arm assigned to a patient at the time eligibility is determined.
 cases.diagnoses.treatments.treatment_dose: The numeric value used to describe the
   total dose of an agent the patient received.
 cases.diagnoses.treatments.treatment_dose_max: A maximum quantity of an agent administered
@@ -1272,6 +1132,8 @@ cases.exposures.alcohol_history: A response to a question that asks whether the 
 cases.exposures.alcohol_intensity: Category to describe the patient's current level
   of alcohol use as self-reported by the patient.
 cases.exposures.alcohol_type: A specific type of alcohol.
+cases.exposures.asbestos_exposure: The yes/no/unknown indicator used to describe whether
+  the patient was exposed to asbestos.
 cases.exposures.asbestos_exposure_type: The type of asbestos exposure the study participant
   experienced.
 cases.exposures.batch_id: GDC submission batch indicator. It is unique within the
@@ -1279,6 +1141,8 @@ cases.exposures.batch_id: GDC submission batch indicator. It is unique within th
 cases.exposures.chemical_exposure_type: The specific type of contact with a chemical
   substance through touch, inhalation, or ingestion.
 cases.exposures.cigarettes_per_day: The average number of cigarettes smoked per day.
+cases.exposures.coal_dust_exposure: The yes/no/unknown indicator used to describe
+  whether a patient was exposed to fine powder derived by the crushing of coal.
 cases.exposures.created_datetime: A combination of date and time of day in the form
   [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.exposures.environmental_tobacco_smoke_exposure: The yes/no/unknown indicator
@@ -1306,6 +1170,12 @@ cases.exposures.parent_with_radiation_exposure: Indicates whether the patient's 
   were exposed to radiation
 cases.exposures.project_id: Unique ID for any specific defined piece of work that
   is undertaken or attempted to meet a single requirement.
+cases.exposures.radon_exposure: The yes/no/unknown indicator used to describe whether
+  the patient was exposed to radon.
+cases.exposures.respirable_crystalline_silica_exposure: The yes/no/unknown indicator
+  used to describe whether a patient was exposed to respirable crystalline silica,
+  a widespread, naturally occurring, crystalline metal oxide that consists of different
+  forms including quartz, cristobalite, tridymite, tripoli, ganister, chert, and novaculite.
 cases.exposures.secondhand_smoke_as_child: The text term used to indicate whether
   the patient was exposed to secondhand smoke as a child.
 cases.exposures.smoking_frequency: The text term used to generally describe how often
@@ -1330,6 +1200,8 @@ cases.exposures.type_of_tobacco_used: The text term used to describe the specifi
 cases.exposures.updated_datetime: A combination of date and time of day in the form
   [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.exposures.use_per_day: The average number of times the patient used per day.
+cases.exposures.years_smoked: Numeric value (or unknown) to represent the number of
+  years a person has been smoking.
 cases.family_histories.batch_id: GDC submission batch indicator. It is unique within
   the context of a project.
 cases.family_histories.created_datetime: A combination of date and time of day in
@@ -1342,8 +1214,6 @@ cases.family_histories.relationship_gender: The text term used to describe the g
   of the patient's relative with a history of cancer.
 cases.family_histories.relationship_primary_diagnosis: The text term used to describe
   the malignant diagnosis of the patient's relative with a history of cancer.
-cases.family_histories.relationship_sex_at_birth: A textual description of a person's
-  relative's sex at birth.
 cases.family_histories.relationship_type: The subgroup that describes the state of
   connectedness between members of the unit of society organized around kinship ties.
 cases.family_histories.relative_deceased: The historical fact that a legal or consanguineous
@@ -1352,8 +1222,8 @@ cases.family_histories.relative_smoker: Indication that a legal or consanguineou
   family member was a smoker.
 cases.family_histories.relative_with_cancer_history: The yes/no/unknown indicator
   used to describe whether any of the patient's relatives have a history of cancer.
-cases.family_histories.relatives_with_cancer_history_count: The number of relatives
-  the patient has with a known history of cancer.
+cases.family_histories.relatives_with_cancer_history_count: Count of relatives with
+  malignant cancer diagnosis derived from family history table
 cases.family_histories.state: The current state of the object.
 cases.family_histories.submitter_id: A project-specific identifier for a node. This
   property is the calling card/nickname/alias for a unit of submission. It can be
@@ -1362,13 +1232,21 @@ cases.family_histories.updated_datetime: A combination of date and time of day i
   the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.files.batch_id: GDC submission batch indicator. It is unique within the context
   of a project.
+cases.files.centers: null
 cases.files.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+cases.files.data_category: Broad categorization of the contents of the data file.
+cases.files.data_format: Format of the data files.
+cases.files.data_subtypes: null
+cases.files.data_type: Specific content type of the data file.
 cases.files.error_type: Type of error for the data file object.
+cases.files.experimental_strategy: The sequencing strategy used to generate the data
+  file.
 cases.files.file_name: The name (or part of a name) of a file (of any type).
 cases.files.file_size: The size of the data file (object) in bytes.
 cases.files.file_state: The current state of the data file object.
 cases.files.md5sum: The 128-bit hash value expressed as a 32 digit hexadecimal number
   (in lower case) used as a file's digital fingerprint.
+cases.files.object_id: The GUID of the object in the index service.
 cases.files.project_id: Unique ID for any specific defined piece of work that is undertaken
   or attempted to meet a single requirement.
 cases.files.state: The current state of the object.
@@ -1385,17 +1263,38 @@ cases.follow_ups.adverse_event_grade: Numeric representation of the intensity/se
   symptom, syndrome, or disease, temporally associated with the use of a medical product
   or procedure, regardless of whether or not it is considered related to the product
   or procedure (attribution of unrelated, unlikely, possible, probable, or definite).
+cases.follow_ups.aids_risk_factors: The text term used to describe a risk factor of
+  the acquired immunodeficiency syndrome (AIDS) that the patient either had at the
+  time of the study or experienced in the past.
 cases.follow_ups.barretts_esophagus_goblet_cells_present: The yes/no/unknown indicator
   used to describe whether goblet cells were determined to be present in a patient
   diagnosed with Barrett's esophagus.
 cases.follow_ups.batch_id: GDC submission batch indicator. It is unique within the
   context of a project.
+cases.follow_ups.bmi: 'Subject''s body mass index (BMI) calculated from height and
+  weight recorded prior to first therapy for active  multiple myeloma diagnosis. algorithm:
+  (weight/(height*height))'
+cases.follow_ups.body_surface_area: Numeric value used to represent the two-dimensional
+  extent of the body surface relating height to weight.
 cases.follow_ups.cause_of_response: The text term used to describe the suspected cause
   or reason for the patient disease response.
+cases.follow_ups.cd4_count: The text term used to describe the outcome of the procedure
+  to determine the amount of the CD4 expressing cells in a sample.
+cases.follow_ups.cdc_hiv_risk_factors: The text term used to describe a risk factor
+  for human immunodeficiency virus, as described by the Centers for Disease Control.
+cases.follow_ups.comorbidities: The text term used to describe a patient with one
+  or more diseases or conditions, which coexist with the patient's malignant disease
+  at the same time.
+cases.follow_ups.comorbidity: The text term used to describe a comorbidity disease,
+  which coexists with the patient's malignant disease.
+cases.follow_ups.comorbidity_method_of_diagnosis: The text term used to describe the
+  method used to diagnose the patient's comorbid disease.
 cases.follow_ups.created_datetime: A combination of date and time of day in the form
   [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.follow_ups.days_to_adverse_event: Number of days between the date used for index
   and the date of the patient's adverse event.
+cases.follow_ups.days_to_comorbidity: Number of days between the date used for index
+  and the date the patient was diagnosed with a comorbidity.
 cases.follow_ups.days_to_first_event: The number of days from the index date to the
   date of the first event.
 cases.follow_ups.days_to_follow_up: Number of days between the date used for index
@@ -1408,24 +1307,63 @@ cases.follow_ups.days_to_progression_free: Number of days between the date used 
   index and the date the patient's disease was formally confirmed as progression-free.
 cases.follow_ups.days_to_recurrence: Number of days between the date used for index
   and the date the patient's disease recurred.
+cases.follow_ups.days_to_risk_factor: The number of days from the index date to the
+  date the patient was diagnosed with a specific risk factor.
+cases.follow_ups.diabetes_treatment_type: Text term used to describe the types of
+  treatment used to manage diabetes.
 cases.follow_ups.discontiguous_lesion_count: The number of the discontiguous lesions
   in a new tumor event.
 cases.follow_ups.disease_response: Code assigned to describe the patient's response
   or outcome to the disease.
-cases.follow_ups.ecog_performance_status: The ECOG functional performance status of
-  the patient/participant.
+cases.follow_ups.dlco_ref_predictive_percent: The value, as a percentage of predicted
+  lung volume, measuring the amount of carbon monoxide detected in a patient's lungs.
+cases.follow_ups.ecog_performance_status: The subject's performance status (PS) score
+  reported in its numeric format  at the time of the visit.  The ECOG PS is a determination
+  of how well a subject is able to perform ordinary tasks and carry out daily activities.
 cases.follow_ups.evidence_of_progression_type: The text term used to describe the
   type of evidence used to determine whether the patient's disease progressed.
 cases.follow_ups.evidence_of_recurrence_type: The text term used to describe the type
   of evidence used to determine whether the patient's disease recurred.
+cases.follow_ups.eye_color: The color of the iris of the eye
+cases.follow_ups.fev1_fvc_post_bronch_percent: Percentage value to represent result
+  of Forced Expiratory Volume in 1 second (FEV1) divided by the Forced Vital Capacity
+  (FVC) post-bronchodilator.
+cases.follow_ups.fev1_fvc_pre_bronch_percent: Percentage value to represent result
+  of Forced Expiratory Volume in 1 second (FEV1) divided by the Forced Vital Capacity
+  (FVC) pre-bronchodilator.
+cases.follow_ups.fev1_ref_post_bronch_percent: The percentage comparison to a normal
+  value reference range of the volume of air that a patient can forcibly exhale from
+  the lungs in one second post-bronchodilator.
+cases.follow_ups.fev1_ref_pre_bronch_percent: The percentage comparison to a normal
+  value reference range of the volume of air that a patient can forcibly exhale from
+  the lungs in one second pre-bronchodilator.
 cases.follow_ups.first_event: Describes the patient's first event after initial treatment.
+cases.follow_ups.haart_treatment_indicator: The text term used to indicate whether
+  the patient received Highly Active Antiretroviral Therapy (HAART).
+cases.follow_ups.height: The height of the patient in centimeters.
+cases.follow_ups.hepatitis_sustained_virological_response: An indication as to whether
+  sustained virological response was obtained in responses to viral hepatitis treatment.
 cases.follow_ups.histologic_progression: The evolution of a low-grade neoplastic pathologic
   process to a high grade malignancy.
 cases.follow_ups.history_of_tumor: Indicates whether patient has a history of tumors.
 cases.follow_ups.history_of_tumor_type: Describes the type of the patient's prior
   diagnosed tumor.
+cases.follow_ups.hiv_viral_load: Numeric value that represents the concentration of
+  an analyte or aliquot extracted from the sample or sample portion, measured in milligrams
+  per milliliter.
+cases.follow_ups.hormonal_contraceptive_type: The specific type of hormonal contraceptives
+  used by the subject.
+cases.follow_ups.hormonal_contraceptive_use: The text term used to indicate whether
+  the patient used hormonal contraceptives.
 cases.follow_ups.hormone_replacement_therapy_type: The specific type of hormone replacement
   therapy received by the patient.
+cases.follow_ups.hpv_positive_type: Text classification to represent the strain or
+  type of human papillomavirus identified in an individual.
+cases.follow_ups.hysterectomy_margins_involved: The text term used to indicate whether
+  the patient's disease was determined to be involved based on the surgical margins
+  of the hysterectomy.
+cases.follow_ups.hysterectomy_type: The text term used to describe the type of hysterectomy
+  the patient had.
 cases.follow_ups.imaging_anatomic_site: The named location(s) within the body where
   an image was taken.
 cases.follow_ups.imaging_findings: Recorded findings noted during the review of a
@@ -1443,8 +1381,12 @@ cases.follow_ups.imaging_suv_max: The standardized update value (SUV) is the eff
   maximum SUV recorded for a patient.
 cases.follow_ups.imaging_type: The text term used to describe the type of imaging
   or scan performed on the patient.
+cases.follow_ups.immunosuppressive_treatment_type: The text term used to describe
+  the type of immunosuppressive treatment the patient received.
 cases.follow_ups.karnofsky_performance_status: Text term used to describe the classification
   used of the functional capabilities of a person.
+cases.follow_ups.menopause_status: Text term used to describe the patient's menopause
+  status.
 cases.follow_ups.molecular_tests.aa_change: 'Alphanumeric value used to describe the
   amino acid change for a specific genetic variant. Example: R116Q.'
 cases.follow_ups.molecular_tests.aneuploidy: A chromosomal abnormality in which there
@@ -1515,7 +1457,7 @@ cases.follow_ups.molecular_tests.locus: The position of a gene or a chromosomal 
   The use of locus is sometimes restricted to mean regions of DNA that are expressed.
 cases.follow_ups.molecular_tests.mismatch_repair_mutation: The yes/no/unknown indicator
   used to describe whether the mutation included in molecular testing was known to
-  have an effect on the mismatch repair process.
+  have an affect on the mismatch repair process.
 cases.follow_ups.molecular_tests.mitotic_count: The number of mitoses identified under
   the microscope in tumors. The method of counting varies, according to the specific
   tumor examined. Usually, the mitotic count is determined based on the number of
@@ -1576,13 +1518,16 @@ cases.follow_ups.molecular_tests.variant_type: The text term used to describe th
   type of genetic variation.
 cases.follow_ups.molecular_tests.zygosity: The text term used to describe the zygosity
   of a specific genetic variant.
+cases.follow_ups.nadir_cd4_count: Numeric value that represents the lowest point to
+  which the CD4 count has dropped (nadir).
 cases.follow_ups.other_clinical_attributes.aids_risk_factors: The text term used to
   describe a risk factor of the acquired immunodeficiency syndrome (AIDS) that the
   patient either had at the time of the study or experienced in the past.
 cases.follow_ups.other_clinical_attributes.batch_id: GDC submission batch indicator.
   It is unique within the context of a project.
-cases.follow_ups.other_clinical_attributes.bmi: A calculated numerical quantity that
-  represents an individual's weight to height ratio.
+cases.follow_ups.other_clinical_attributes.bmi: 'Subject''s body mass index (BMI)
+  calculated from height and weight recorded prior to first therapy for active  multiple
+  myeloma diagnosis. algorithm: (weight/(height*height))'
 cases.follow_ups.other_clinical_attributes.body_surface_area: Numeric value used to
   represent the two-dimensional extent of the body surface relating height to weight.
 cases.follow_ups.other_clinical_attributes.cd4_count: The text term used to describe
@@ -1611,8 +1556,6 @@ cases.follow_ups.other_clinical_attributes.exercise_frequency_weekly: Text term 
   indicates the number of days that exercise occurred in the past seven days.
 cases.follow_ups.other_clinical_attributes.eye_color: The color of the iris of the
   eye
-cases.follow_ups.other_clinical_attributes.fertility_history: Text term to describe
-  an individual's capacity to conceive or to induce conception
 cases.follow_ups.other_clinical_attributes.fev1_fvc_post_bronch_percent: Percentage
   value to represent result of Forced Expiratory Volume in 1 second (FEV1) divided
   by the Forced Vital Capacity (FVC) post-bronchodilator.
@@ -1669,6 +1612,8 @@ cases.follow_ups.other_clinical_attributes.oxygen_use_type: Text term to describ
   the type of oxygen the patient uses at home.
 cases.follow_ups.other_clinical_attributes.pancreatitis_onset_year: Numeric value
   to represent the year that the patient was diagnosed with clinical chronic pancreatitis.
+cases.follow_ups.other_clinical_attributes.pregnancy_count: The number of times an
+  individual has become pregnant.
 cases.follow_ups.other_clinical_attributes.pregnancy_outcome: The text term used to
   describe the type of pregnancy the patient had.
 cases.follow_ups.other_clinical_attributes.pregnant_at_diagnosis: The text term used
@@ -1713,6 +1658,9 @@ cases.follow_ups.other_clinical_attributes.undescended_testis_history_laterality
   the lateral location of the patient's undescended testis.
 cases.follow_ups.other_clinical_attributes.updated_datetime: A combination of date
   and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+cases.follow_ups.other_clinical_attributes.viral_hepatitis_serologies: Text term that
+  describes the kind of serological laboratory test used to determine the patient's
+  hepatitis status.
 cases.follow_ups.other_clinical_attributes.viral_hepatitis_serology_tests: A set of
   tests that is used to determine if a subject has been or is currently infected with
   a Hepatitis virus, is shedding Hepatitis virus or has immunity to Hepatitis viruses.
@@ -1721,12 +1669,16 @@ cases.follow_ups.other_clinical_attributes.weeks_gestation_at_birth: Numeric val
   mother's last menstrual period and ending with the birth of the patient.
 cases.follow_ups.other_clinical_attributes.weight: The weight of the patient measured
   in kilograms.
+cases.follow_ups.pancreatitis_onset_year: Numeric value to represent the year that
+  the patient was diagnosed with clinical chronic pancreatitis.
 cases.follow_ups.peritoneal_washing_results: The results from this minimally invasive
   procedure that permits sampling of peritoneal fluid for cytopathologic analysis.
+cases.follow_ups.pregnancy_count: The number of times an individual has become pregnant.
+cases.follow_ups.pregnancy_outcome: The text term used to describe the type of pregnancy
+  the patient had.
 cases.follow_ups.procedures_performed: The type of procedures performed on the patient.
-cases.follow_ups.progression_or_recurrence: Indicates whether a patient has a progression
-  or recurrence after initial treatment. This can include local, regional, or metastatic
-  disease.
+cases.follow_ups.progression_or_recurrence: Indicator that the subject has progressive
+  disease after initial treatment.
 cases.follow_ups.progression_or_recurrence_anatomic_site: The text term used to describe
   the anatomic site of the progressive or recurrent disease.
 cases.follow_ups.progression_or_recurrence_type: The text term used to describe the
@@ -1739,6 +1691,17 @@ cases.follow_ups.recist_targeted_regions_number: Numeric value that represents t
 cases.follow_ups.recist_targeted_regions_sum: Numeric value that represents the sum
   of baseline target lesions, as described by the Response Evaluation Criteria in
   Solid Tumours (RECIST) criteria.
+cases.follow_ups.reflux_treatment_type: Text term used to describe the types of treatment
+  used to manage gastroesophageal reflux disease (GERD).
+cases.follow_ups.risk_factor: The text term used to describe a risk factor the patient
+  had at the time of or prior to their diagnosis.
+cases.follow_ups.risk_factor_method_of_diagnosis: The clinical or laboratory procedure(s)
+  used in the determination of a diagnosis described in this context as a risk factor.
+cases.follow_ups.risk_factor_treatment: The yes/no/unknown indicator used to describe
+  whether the patient received treatment for a risk factor the patient had at the
+  time of or prior to their diagnosis.
+cases.follow_ups.risk_factors: The text term used to describe a risk factor the patient
+  had at the time of or prior to their diagnosis.
 cases.follow_ups.scan_tracer_used: The text term used to describe the type of tracer
   used during the imaging or scan of the patient.
 cases.follow_ups.state: The current state of the object.
@@ -1750,10 +1713,26 @@ cases.follow_ups.timepoint_category: Category describing a specific point in the
 cases.follow_ups.treatment_emergent_adverse_event: A situation that emerges during
   treatment, having been absent pretreatment, or worsens relative to the pretreatment
   state.
+cases.follow_ups.undescended_testis_corrected: Indicates whether the patient's undescended
+  testis was corrected.
+cases.follow_ups.undescended_testis_corrected_age: The patient's age when their undescended
+  testis was corrected.
+cases.follow_ups.undescended_testis_corrected_laterality: Describes the lateral location
+  of the patient's undescended testis correction.
+cases.follow_ups.undescended_testis_corrected_method: Describes the method used to
+  correct the patient's undescended testis.
+cases.follow_ups.undescended_testis_history: The persistent failure of one or both
+  testes to descend into the scrotum.
+cases.follow_ups.undescended_testis_history_laterality: Describes the lateral location
+  of the patient's undescended testis.
 cases.follow_ups.updated_datetime: A combination of date and time of day in the form
   [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+cases.follow_ups.viral_hepatitis_serologies: Text term that describes the kind of
+  serological laboratory test used to determine the patient's hepatitis status.
+cases.follow_ups.weight: The weight of the patient measured in kilograms.
 cases.follow_ups.year_of_follow_up: The year of the patient's last follow-up appointment
   or contact.
+cases.project.availability_type: Is the project open or restricted?
 cases.project.awg_review: Indicates that the project is an AWG project.
 cases.project.code: Project code
 cases.project.dbgap_accession_number: The dbgap accession number for the project.
@@ -1785,6 +1764,8 @@ cases.samples.aliquots.aliquot_volume: The volume in microliters (ul) of the ali
 cases.samples.aliquots.amount: Weight in grams or volume in mL.
 cases.samples.aliquots.analyte_type: Text term that represents the kind of molecular
   specimen analyte.
+cases.samples.aliquots.analyte_type_id: A single letter code used to identify a type
+  of molecular analyte.
 cases.samples.aliquots.batch_id: GDC submission batch indicator. It is unique within
   the context of a project.
 cases.samples.aliquots.concentration: Numeric value that represents the concentration
@@ -1792,6 +1773,10 @@ cases.samples.aliquots.concentration: Numeric value that represents the concentr
   milligrams per milliliter.
 cases.samples.aliquots.created_datetime: A combination of date and time of day in
   the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+cases.samples.aliquots.dataset: the dataset identifier for aliquots (correlates experimental
+  strategy identified in aliquot)
+cases.samples.aliquots.experimental_strategy: The sequencing strategy used to generate
+  the data file.
 cases.samples.aliquots.no_matched_normal_low_pass_wgs: There will be no matched normal
   low pass WGS aliquots for this case that can be used for variant calling purposes.
   The GDC may elect to use a single tumor calling pipeline to process this data.
@@ -1819,6 +1804,7 @@ cases.samples.aliquots.selected_normal_wgs: Denotes which WGS normal aliquot the
 cases.samples.aliquots.selected_normal_wxs: Denotes which WXS normal aliquot the submitter
   prefers to use for variant calling. Only one normal per experimental strategy per
   case can be selected.
+cases.samples.aliquots.site_code: The site of aliquot analysis, encoded
 cases.samples.aliquots.source_center: Name of the center that provided the item.
 cases.samples.aliquots.state: The current state of the object.
 cases.samples.aliquots.submitter_id: A project-specific identifier for a node. This
@@ -1836,6 +1822,8 @@ cases.samples.analytes.aliquots.aliquot_volume: The volume in microliters (ul) o
 cases.samples.analytes.aliquots.amount: Weight in grams or volume in mL.
 cases.samples.analytes.aliquots.analyte_type: Text term that represents the kind of
   molecular specimen analyte.
+cases.samples.analytes.aliquots.analyte_type_id: A single letter code used to identify
+  a type of molecular analyte.
 cases.samples.analytes.aliquots.batch_id: GDC submission batch indicator. It is unique
   within the context of a project.
 cases.samples.analytes.aliquots.concentration: Numeric value that represents the concentration
@@ -1843,6 +1831,10 @@ cases.samples.analytes.aliquots.concentration: Numeric value that represents the
   milligrams per milliliter.
 cases.samples.analytes.aliquots.created_datetime: A combination of date and time of
   day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+cases.samples.analytes.aliquots.dataset: the dataset identifier for aliquots (correlates
+  experimental strategy identified in aliquot)
+cases.samples.analytes.aliquots.experimental_strategy: The sequencing strategy used
+  to generate the data file.
 cases.samples.analytes.aliquots.no_matched_normal_low_pass_wgs: There will be no matched
   normal low pass WGS aliquots for this case that can be used for variant calling
   purposes. The GDC may elect to use a single tumor calling pipeline to process this
@@ -1871,6 +1863,7 @@ cases.samples.analytes.aliquots.selected_normal_wgs: Denotes which WGS normal al
 cases.samples.analytes.aliquots.selected_normal_wxs: Denotes which WXS normal aliquot
   the submitter prefers to use for variant calling. Only one normal per experimental
   strategy per case can be selected.
+cases.samples.analytes.aliquots.site_code: The site of aliquot analysis, encoded
 cases.samples.analytes.aliquots.source_center: Name of the center that provided the
   item.
 cases.samples.analytes.aliquots.state: The current state of the object.
@@ -1884,8 +1877,10 @@ cases.samples.analytes.analyte_quantity: The quantity in micrograms (ug) of the 
   derived from the analyte(s) shipped for sequencing and characterization.
 cases.samples.analytes.analyte_type: Text term that represents the kind of molecular
   specimen analyte.
-cases.samples.analytes.analyte_volume: "The volume in microliters (ul) of the analyte(s)\
-  \ shipped for sequencing and\n characterization."
+cases.samples.analytes.analyte_type_id: A single letter code used to identify a type
+  of molecular analyte.
+cases.samples.analytes.analyte_volume: The volume in microliters (ul) of the aliquot(s)
+  derived from the analyte(s) shipped for sequencing and characterization.
 cases.samples.analytes.batch_id: GDC submission batch indicator. It is unique within
   the context of a project.
 cases.samples.analytes.concentration: Numeric value that represents the concentration
@@ -1893,9 +1888,6 @@ cases.samples.analytes.concentration: Numeric value that represents the concentr
   milligrams per milliliter.
 cases.samples.analytes.created_datetime: A combination of date and time of day in
   the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.analytes.dna_integrity_number: An assessment of the amount of fragmentation
-  in a genomic DNA sample. It is derived by an algorithm that assesses the distribution
-  of signal across the size range and generates a calculated integrity number.
 cases.samples.analytes.experimental_protocol_type: The type of experiment used to
   extract the analyte.
 cases.samples.analytes.normal_tumor_genotype_snp_match: Text term that represents
@@ -1903,8 +1895,6 @@ cases.samples.analytes.normal_tumor_genotype_snp_match: Text term that represent
 cases.samples.analytes.project_id: Unique ID for any specific defined piece of work
   that is undertaken or attempted to meet a single requirement.
 cases.samples.analytes.ribosomal_rna_28s_16s_ratio: The 28S/18S ribosomal RNA band
-  ratio used to assess the quality of total RNA.
-cases.samples.analytes.ribosomal_rna_28s_18s_ratio: The 28S/18S ribosomal RNA band
   ratio used to assess the quality of total RNA.
 cases.samples.analytes.rna_integrity_number: A numerical assessment of the integrity
   of RNA based on the entire electrophoretic trace of the RNA sample, including the
@@ -1919,67 +1909,6 @@ cases.samples.analytes.updated_datetime: A combination of date and time of day i
   the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.samples.analytes.well_number: Numeric value that represents the well location
   within a plate for the analyte or aliquot from the sample.
-cases.samples.annotations.batch_id: GDC submission batch indicator. It is unique within
-  the context of a project.
-cases.samples.annotations.category: Top level characterization of the annotation.
-cases.samples.annotations.classification: Top level classification of the annotation.
-cases.samples.annotations.created_datetime: A combination of date and time of day
-  in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.annotations.creator: Name of the person or entity responsible for the
-  creation of the annotation.
-cases.samples.annotations.legacy_created_datetime: A combination of date and time
-  of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.annotations.legacy_updated_datetime: A combination of date and time
-  of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.annotations.notes: Open entry for any further description or characterization
-  of the data.
-cases.samples.annotations.project_id: Unique ID for any specific defined piece of
-  work that is undertaken or attempted to meet a single requirement.
-cases.samples.annotations.state: The current state of the object.
-cases.samples.annotations.status: Status of the annotation.
-cases.samples.annotations.submitter_id: A project-specific identifier for a node.
-  This property is the calling card/nickname/alias for a unit of submission. It can
-  be used in place of the uuid for identifying or recalling a node.
-cases.samples.annotations.updated_datetime: A combination of date and time of day
-  in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.batch_id: GDC submission batch indicator. It is unique within the context
-  of a project.
-cases.samples.biospecimen_anatomic_site: Text term that represents the name of the
-  organ or tissue site of the submitted sample.
-cases.samples.biospecimen_laterality: For tumors in paired organs, designates the
-  side on which the specimen was obtained.
-cases.samples.catalog_reference: HCMI catalog reference number for cancer model.
-cases.samples.created_datetime: A combination of date and time of day in the form
-  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.current_weight: Numeric value that represents the current weight of
-  the sample, measured in milligrams.
-cases.samples.days_to_collection: The number of days from the index date to the date
-  a sample was received by the Biospecimen Core Resource (BCR) or other center for
-  processing.
-cases.samples.days_to_sample_procurement: The number of days from the index date to
-  the date a patient underwent a procedure (e.g. surgical resection) to yield or remove
-  from the patient a sample that was eventually used for research.
-cases.samples.diagnosis_pathologically_confirmed: The histologic description of tissue
-  or cells confirmed by a pathology review of frozen or formalin fixed slide(s) completed
-  after the diagnostic pathology review of the tumor sample used to extract analyte(s).
-cases.samples.distance_normal_to_tumor: Text term to signify the distance between
-  the tumor tissue and the normal control tissue that was procured for matching normal
-  DNA.
-cases.samples.distributor_reference: Distributor reference number for cancer model.
-cases.samples.freezing_method: Text term that represents the method used for freezing
-  the sample.
-cases.samples.growth_rate: Rate at which the model grows, measured as hours to time
-  to split.
-cases.samples.initial_weight: Numeric value that represents the initial weight of
-  the sample, measured in milligrams.
-cases.samples.intermediate_dimension: Intermediate dimension of the sample, in millimeters.
-cases.samples.longest_dimension: Numeric value that represents the longest dimension
-  of the sample, measured in millimeters.
-cases.samples.method_of_sample_procurement: The method used to procure the sample
-  used to extract analyte(s).
-cases.samples.passage_count: Number of passages (splits) between the original tissue
-  and this model.
-cases.samples.pathology_report_uuid: UUID of the related pathology report.
 cases.samples.portions.analytes.a260_a280_ratio: Numeric value that represents the
   sample ratio of nucleic acid absorbance at 260 nm and 280 nm, used to determine
   a measure of DNA purity.
@@ -1990,50 +1919,40 @@ cases.samples.portions.analytes.aliquots.aliquot_volume: The volume in microlite
 cases.samples.portions.analytes.aliquots.amount: Weight in grams or volume in mL.
 cases.samples.portions.analytes.aliquots.analyte_type: Text term that represents the
   kind of molecular specimen analyte.
-cases.samples.portions.analytes.aliquots.annotations.batch_id: GDC submission batch
-  indicator. It is unique within the context of a project.
-cases.samples.portions.analytes.aliquots.annotations.category: Top level characterization
-  of the annotation.
-cases.samples.portions.analytes.aliquots.annotations.classification: Top level classification
-  of the annotation.
-cases.samples.portions.analytes.aliquots.annotations.created_datetime: A combination
-  of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.analytes.aliquots.annotations.creator: Name of the person or
-  entity responsible for the creation of the annotation.
-cases.samples.portions.analytes.aliquots.annotations.legacy_created_datetime: A combination
-  of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.analytes.aliquots.annotations.legacy_updated_datetime: A combination
-  of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.analytes.aliquots.annotations.notes: Open entry for any further
-  description or characterization of the data.
-cases.samples.portions.analytes.aliquots.annotations.project_id: Unique ID for any
-  specific defined piece of work that is undertaken or attempted to meet a single
-  requirement.
-cases.samples.portions.analytes.aliquots.annotations.state: The current state of the
-  object.
-cases.samples.portions.analytes.aliquots.annotations.status: Status of the annotation.
-cases.samples.portions.analytes.aliquots.annotations.submitter_id: A project-specific
-  identifier for a node. This property is the calling card/nickname/alias for a unit
-  of submission. It can be used in place of the uuid for identifying or recalling
-  a node.
-cases.samples.portions.analytes.aliquots.annotations.updated_datetime: A combination
-  of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+cases.samples.portions.analytes.aliquots.analyte_type_id: A single letter code used
+  to identify a type of molecular analyte.
 cases.samples.portions.analytes.aliquots.batch_id: GDC submission batch indicator.
+  It is unique within the context of a project.
+cases.samples.portions.analytes.aliquots.center.batch_id: GDC submission batch indicator.
   It is unique within the context of a project.
 cases.samples.portions.analytes.aliquots.center.center_type: Type classification of
   the center (e.g. CGCC).
 cases.samples.portions.analytes.aliquots.center.code: Numeric code for the center.
+cases.samples.portions.analytes.aliquots.center.created_datetime: A combination of
+  date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.samples.portions.analytes.aliquots.center.name: Name of the center (e.g. Broad
   Institute of MIT and Harvard).
 cases.samples.portions.analytes.aliquots.center.namespace: Domain name of the center
   (e.g. broad.mit.edu).
+cases.samples.portions.analytes.aliquots.center.project_id: Unique ID for any specific
+  defined piece of work that is undertaken or attempted to meet a single requirement.
 cases.samples.portions.analytes.aliquots.center.short_name: Shortened name of the
   center (e.g. BI).
+cases.samples.portions.analytes.aliquots.center.state: The current state of the object.
+cases.samples.portions.analytes.aliquots.center.submitter_id: A project-specific identifier
+  for a node. This property is the calling card/nickname/alias for a unit of submission.
+  It can be used in place of the uuid for identifying or recalling a node.
+cases.samples.portions.analytes.aliquots.center.updated_datetime: A combination of
+  date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.samples.portions.analytes.aliquots.concentration: Numeric value that represents
   the concentration of an analyte or aliquot extracted from the sample or sample portion,
   measured in milligrams per milliliter.
 cases.samples.portions.analytes.aliquots.created_datetime: A combination of date and
   time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+cases.samples.portions.analytes.aliquots.dataset: the dataset identifier for aliquots
+  (correlates experimental strategy identified in aliquot)
+cases.samples.portions.analytes.aliquots.experimental_strategy: The sequencing strategy
+  used to generate the data file.
 cases.samples.portions.analytes.aliquots.no_matched_normal_low_pass_wgs: There will
   be no matched normal low pass WGS aliquots for this case that can be used for variant
   calling purposes. The GDC may elect to use a single tumor calling pipeline to process
@@ -2062,6 +1981,8 @@ cases.samples.portions.analytes.aliquots.selected_normal_wgs: Denotes which WGS 
 cases.samples.portions.analytes.aliquots.selected_normal_wxs: Denotes which WXS normal
   aliquot the submitter prefers to use for variant calling. Only one normal per experimental
   strategy per case can be selected.
+cases.samples.portions.analytes.aliquots.site_code: The site of aliquot analysis,
+  encoded
 cases.samples.portions.analytes.aliquots.source_center: Name of the center that provided
   the item.
 cases.samples.portions.analytes.aliquots.state: The current state of the object.
@@ -2075,33 +1996,10 @@ cases.samples.portions.analytes.analyte_quantity: The quantity in micrograms (ug
   of the analyte(s) derived from the analyte(s) shipped for sequencing and characterization.
 cases.samples.portions.analytes.analyte_type: Text term that represents the kind of
   molecular specimen analyte.
-cases.samples.portions.analytes.analyte_volume: "The volume in microliters (ul) of\
-  \ the analyte(s) shipped for sequencing and\n characterization."
-cases.samples.portions.analytes.annotations.batch_id: GDC submission batch indicator.
-  It is unique within the context of a project.
-cases.samples.portions.analytes.annotations.category: Top level characterization of
-  the annotation.
-cases.samples.portions.analytes.annotations.classification: Top level classification
-  of the annotation.
-cases.samples.portions.analytes.annotations.created_datetime: A combination of date
-  and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.analytes.annotations.creator: Name of the person or entity
-  responsible for the creation of the annotation.
-cases.samples.portions.analytes.annotations.legacy_created_datetime: A combination
-  of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.analytes.annotations.legacy_updated_datetime: A combination
-  of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.analytes.annotations.notes: Open entry for any further description
-  or characterization of the data.
-cases.samples.portions.analytes.annotations.project_id: Unique ID for any specific
-  defined piece of work that is undertaken or attempted to meet a single requirement.
-cases.samples.portions.analytes.annotations.state: The current state of the object.
-cases.samples.portions.analytes.annotations.status: Status of the annotation.
-cases.samples.portions.analytes.annotations.submitter_id: A project-specific identifier
-  for a node. This property is the calling card/nickname/alias for a unit of submission.
-  It can be used in place of the uuid for identifying or recalling a node.
-cases.samples.portions.analytes.annotations.updated_datetime: A combination of date
-  and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+cases.samples.portions.analytes.analyte_type_id: A single letter code used to identify
+  a type of molecular analyte.
+cases.samples.portions.analytes.analyte_volume: The volume in microliters (ul) of
+  the aliquot(s) derived from the analyte(s) shipped for sequencing and characterization.
 cases.samples.portions.analytes.batch_id: GDC submission batch indicator. It is unique
   within the context of a project.
 cases.samples.portions.analytes.concentration: Numeric value that represents the concentration
@@ -2109,10 +2007,6 @@ cases.samples.portions.analytes.concentration: Numeric value that represents the
   milligrams per milliliter.
 cases.samples.portions.analytes.created_datetime: A combination of date and time of
   day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.analytes.dna_integrity_number: An assessment of the amount
-  of fragmentation in a genomic DNA sample. It is derived by an algorithm that assesses
-  the distribution of signal across the size range and generates a calculated integrity
-  number.
 cases.samples.portions.analytes.experimental_protocol_type: The type of experiment
   used to extract the analyte.
 cases.samples.portions.analytes.normal_tumor_genotype_snp_match: Text term that represents
@@ -2120,8 +2014,6 @@ cases.samples.portions.analytes.normal_tumor_genotype_snp_match: Text term that 
 cases.samples.portions.analytes.project_id: Unique ID for any specific defined piece
   of work that is undertaken or attempted to meet a single requirement.
 cases.samples.portions.analytes.ribosomal_rna_28s_16s_ratio: The 28S/18S ribosomal
-  RNA band ratio used to assess the quality of total RNA.
-cases.samples.portions.analytes.ribosomal_rna_28s_18s_ratio: The 28S/18S ribosomal
   RNA band ratio used to assess the quality of total RNA.
 cases.samples.portions.analytes.rna_integrity_number: A numerical assessment of the
   integrity of RNA based on the entire electrophoretic trace of the RNA sample, including
@@ -2136,74 +2028,25 @@ cases.samples.portions.analytes.updated_datetime: A combination of date and time
   day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.samples.portions.analytes.well_number: Numeric value that represents the well
   location within a plate for the analyte or aliquot from the sample.
-cases.samples.portions.annotations.batch_id: GDC submission batch indicator. It is
-  unique within the context of a project.
-cases.samples.portions.annotations.category: Top level characterization of the annotation.
-cases.samples.portions.annotations.classification: Top level classification of the
-  annotation.
-cases.samples.portions.annotations.created_datetime: A combination of date and time
-  of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.annotations.creator: Name of the person or entity responsible
-  for the creation of the annotation.
-cases.samples.portions.annotations.legacy_created_datetime: A combination of date
-  and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.annotations.legacy_updated_datetime: A combination of date
-  and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.annotations.notes: Open entry for any further description or
-  characterization of the data.
-cases.samples.portions.annotations.project_id: Unique ID for any specific defined
-  piece of work that is undertaken or attempted to meet a single requirement.
-cases.samples.portions.annotations.state: The current state of the object.
-cases.samples.portions.annotations.status: Status of the annotation.
-cases.samples.portions.annotations.submitter_id: A project-specific identifier for
-  a node. This property is the calling card/nickname/alias for a unit of submission.
-  It can be used in place of the uuid for identifying or recalling a node.
-cases.samples.portions.annotations.updated_datetime: A combination of date and time
-  of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.batch_id: GDC submission batch indicator. It is unique within
-  the context of a project.
+cases.samples.portions.center.batch_id: GDC submission batch indicator. It is unique
+  within the context of a project.
 cases.samples.portions.center.center_type: Type classification of the center (e.g.
   CGCC).
 cases.samples.portions.center.code: Numeric code for the center.
+cases.samples.portions.center.created_datetime: A combination of date and time of
+  day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.samples.portions.center.name: Name of the center (e.g. Broad Institute of MIT
   and Harvard).
 cases.samples.portions.center.namespace: Domain name of the center (e.g. broad.mit.edu).
+cases.samples.portions.center.project_id: Unique ID for any specific defined piece
+  of work that is undertaken or attempted to meet a single requirement.
 cases.samples.portions.center.short_name: Shortened name of the center (e.g. BI).
-cases.samples.portions.created_datetime: A combination of date and time of day in
-  the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.creation_datetime: The datetime of portion creation encoded
-  as seconds from epoch.
-cases.samples.portions.is_ffpe: Indicator to signify whether or not the tissue sample
-  was fixed in formalin and embedded in paraffin (FFPE).
-cases.samples.portions.portion_number: Numeric value that represents the sequential
-  number assigned to a portion of the sample.
-cases.samples.portions.project_id: Unique ID for any specific defined piece of work
-  that is undertaken or attempted to meet a single requirement.
-cases.samples.portions.slides.annotations.batch_id: GDC submission batch indicator.
-  It is unique within the context of a project.
-cases.samples.portions.slides.annotations.category: Top level characterization of
-  the annotation.
-cases.samples.portions.slides.annotations.classification: Top level classification
-  of the annotation.
-cases.samples.portions.slides.annotations.created_datetime: A combination of date
-  and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.slides.annotations.creator: Name of the person or entity responsible
-  for the creation of the annotation.
-cases.samples.portions.slides.annotations.legacy_created_datetime: A combination of
-  date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.slides.annotations.legacy_updated_datetime: A combination of
-  date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.slides.annotations.notes: Open entry for any further description
-  or characterization of the data.
-cases.samples.portions.slides.annotations.project_id: Unique ID for any specific defined
-  piece of work that is undertaken or attempted to meet a single requirement.
-cases.samples.portions.slides.annotations.state: The current state of the object.
-cases.samples.portions.slides.annotations.status: Status of the annotation.
-cases.samples.portions.slides.annotations.submitter_id: A project-specific identifier
-  for a node. This property is the calling card/nickname/alias for a unit of submission.
-  It can be used in place of the uuid for identifying or recalling a node.
-cases.samples.portions.slides.annotations.updated_datetime: A combination of date
-  and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+cases.samples.portions.center.state: The current state of the object.
+cases.samples.portions.center.submitter_id: A project-specific identifier for a node.
+  This property is the calling card/nickname/alias for a unit of submission. It can
+  be used in place of the uuid for identifying or recalling a node.
+cases.samples.portions.center.updated_datetime: A combination of date and time of
+  day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.samples.portions.slides.batch_id: GDC submission batch indicator. It is unique
   within the context of a project.
 cases.samples.portions.slides.bone_marrow_malignant_cells: The text term used to indicate
@@ -2267,47 +2110,6 @@ cases.samples.portions.slides.tissue_microarray_coordinates: The alphanumeric te
   slide.
 cases.samples.portions.slides.updated_datetime: A combination of date and time of
   day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.state: The current state of the object.
-cases.samples.portions.submitter_id: A project-specific identifier for a node. This
-  property is the calling card/nickname/alias for a unit of submission. It can be
-  used in place of the uuid for identifying or recalling a node.
-cases.samples.portions.updated_datetime: A combination of date and time of day in
-  the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.portions.weight: Numeric value that represents the sample portion weight,
-  measured in milligrams.
-cases.samples.preservation_method: Text term that represents the method used to preserve
-  the sample.
-cases.samples.project_id: Unique ID for any specific defined piece of work that is
-  undertaken or attempted to meet a single requirement.
-cases.samples.sample_ordinal: A number describing the samples place in an ordered
-  sequence.
-cases.samples.sample_type: Text term to describe the source of a biospecimen used
-  for a laboratory test.
-cases.samples.shortest_dimension: Numeric value that represents the shortest dimension
-  of the sample, measured in millimeters.
-cases.samples.slides.annotations.batch_id: GDC submission batch indicator. It is unique
-  within the context of a project.
-cases.samples.slides.annotations.category: Top level characterization of the annotation.
-cases.samples.slides.annotations.classification: Top level classification of the annotation.
-cases.samples.slides.annotations.created_datetime: A combination of date and time
-  of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.slides.annotations.creator: Name of the person or entity responsible
-  for the creation of the annotation.
-cases.samples.slides.annotations.legacy_created_datetime: A combination of date and
-  time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.slides.annotations.legacy_updated_datetime: A combination of date and
-  time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.slides.annotations.notes: Open entry for any further description or
-  characterization of the data.
-cases.samples.slides.annotations.project_id: Unique ID for any specific defined piece
-  of work that is undertaken or attempted to meet a single requirement.
-cases.samples.slides.annotations.state: The current state of the object.
-cases.samples.slides.annotations.status: Status of the annotation.
-cases.samples.slides.annotations.submitter_id: A project-specific identifier for a
-  node. This property is the calling card/nickname/alias for a unit of submission.
-  It can be used in place of the uuid for identifying or recalling a node.
-cases.samples.slides.annotations.updated_datetime: A combination of date and time
-  of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.samples.slides.batch_id: GDC submission batch indicator. It is unique within
   the context of a project.
 cases.samples.slides.bone_marrow_malignant_cells: The text term used to indicate whether
@@ -2368,55 +2170,94 @@ cases.samples.slides.tissue_microarray_coordinates: The alphanumeric term used t
   describe the coordinates of a specific tissue located on a tissue microarray slide.
 cases.samples.slides.updated_datetime: A combination of date and time of day in the
   form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-cases.samples.specimen_type: The type of a material sample taken from a biological
-  entity for testing, diagnostic, propagation, treatment or research purposes. This
-  includes particular types of cellular molecules, cells, tissues, organs, body fluids,
-  embryos, and body excretory substances.
-cases.samples.state: The current state of the object.
-cases.samples.submitter_id: A project-specific identifier for a node. This property
-  is the calling card/nickname/alias for a unit of submission. It can be used in place
-  of the uuid for identifying or recalling a node.
-cases.samples.time_between_clamping_and_freezing: Numeric representation of the elapsed
-  time between the surgical clamping of blood supply and freezing of the sample, measured
-  in minutes.
-cases.samples.time_between_excision_and_freezing: Numeric representation of the elapsed
-  time between the excision and freezing of the sample, measured in minutes.
-cases.samples.tissue_collection_type: The text term used to describe the type of collection
-  used to obtain tissue.
-cases.samples.tissue_type: Text term that represents a description of the kind of
-  tissue collected with respect to disease status or proximity to tumor tissue.
-cases.samples.tumor_code_id: BCR-defined id code for the tumor sample.
-cases.samples.tumor_descriptor: Text that describes the kind of disease present in
-  the tumor specimen as related to a specific timepoint.
-cases.samples.updated_datetime: A combination of date and time of day in the form
-  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+cases.tissue_source_site.batch_id: GDC submission batch indicator. It is unique within
+  the context of a project.
 cases.tissue_source_site.bcr_id: TCGA-provided BCR id.
 cases.tissue_source_site.code: TCGA-provided TSS code.
+cases.tissue_source_site.created_datetime: A combination of date and time of day in
+  the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.tissue_source_site.name: Name of the source site.
 cases.tissue_source_site.project: Study name of the project.
-files.annotations.batch_id: GDC submission batch indicator. It is unique within the
-  context of a project.
-files.annotations.category: Top level characterization of the annotation.
-files.annotations.classification: Top level classification of the annotation.
-files.annotations.created_datetime: A combination of date and time of day in the form
-  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-files.annotations.creator: Name of the person or entity responsible for the creation
-  of the annotation.
-files.annotations.legacy_created_datetime: A combination of date and time of day in
+cases.tissue_source_site.project_id: Unique ID for any specific defined piece of work
+  that is undertaken or attempted to meet a single requirement.
+cases.tissue_source_site.state: The current state of the object.
+cases.tissue_source_site.submitter_id: A project-specific identifier for a node. This
+  property is the calling card/nickname/alias for a unit of submission. It can be
+  used in place of the uuid for identifying or recalling a node.
+cases.tissue_source_site.updated_datetime: A combination of date and time of day in
   the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-files.annotations.legacy_updated_datetime: A combination of date and time of day in
-  the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-files.annotations.notes: Open entry for any further description or characterization
-  of the data.
-files.annotations.project_id: Unique ID for any specific defined piece of work that
-  is undertaken or attempted to meet a single requirement.
-files.annotations.state: The current state of the object.
-files.annotations.status: Status of the annotation.
-files.annotations.submitter_id: A project-specific identifier for a node. This property
-  is the calling card/nickname/alias for a unit of submission. It can be used in place
-  of the uuid for identifying or recalling a node.
-files.annotations.updated_datetime: A combination of date and time of day in the form
-  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+e.batch_id: GDC submission batch indicator. It is unique within the context of a project.
+e.biospecimen_anatomic_site: Text term that represents the name of the organ or tissue
+  site of the submitted sample.
+e.biospecimen_laterality: For tumors in paired organs, designates the side on which
+  the specimen was obtained.
+e.catalog_reference: HCMI catalog reference number for cancer model.
+e.collection_event: The event triggering collection of the sample
+e.composition: Text term that represents the cellular composition of the sample.
+e.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+e.creation_datetime: The datetime of portion creation encoded as seconds from epoch.
+e.current_weight: Numeric value that represents the current weight of the sample,
+  measured in milligrams.
+e.days_to_collection: The number of days from the index date to the date a sample
+  was received by the Biospecimen Core Resource (BCR) or other center for processing.
+e.days_to_sample_procurement: The number of days from the index date to the date a
+  patient underwent a procedure (e.g. surgical resection) to yield or remove from
+  the patient a sample that was eventually used for research.
+e.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
+  confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
+  the diagnostic pathology review of the tumor sample used to extract analyte(s).
+e.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
+  and the normal control tissue that was procured for matching normal DNA.
+e.distributor_reference: Distributor reference number for cancer model.
+e.freezing_method: Text term that represents the method used for freezing the sample.
+e.growth_rate: Rate at which the model grows, measured as hours to time to split.
+e.initial_weight: Numeric value that represents the initial weight of the sample,
+  measured in milligrams.
+e.intermediate_dimension: Intermediate dimension of the sample, in millimeters.
+e.is_ffpe: Indicator to signify whether or not the tissue sample was fixed in formalin
+  and embedded in paraffin (FFPE).
+e.longest_dimension: Numeric value that represents the longest dimension of the sample,
+  measured in millimeters.
+e.method_of_sample_procurement: The method used to procure the sample used to extract
+  analyte(s).
+e.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
+  Temperature (OCT) compound.
+e.passage_count: Number of passages (splits) between the original tissue and this
+  model.
+e.pathology_report_uuid: UUID of the related pathology report.
+e.portion_number: Numeric value that represents the sequential number assigned to
+  a portion of the sample.
+e.preservation_method: Text term that represents the method used to preserve the sample.
+e.project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+e.sample_ordinal: A number describing the samples place in an ordered sequence.
+e.sample_type: Text term to describe the source of a biospecimen used for a laboratory
+  test.
+e.sample_type_id: The accompanying sample type id for the sample type.
+e.shortest_dimension: Numeric value that represents the shortest dimension of the
+  sample, measured in millimeters.
+e.specimen_type: The type of a material sample taken from a biological entity for
+  testing, diagnostic, propagation, treatment or research purposes. This includes
+  particular types of cellular molecules, cells, tissues, organs, body fluids, embryos,
+  and body excretory substances.
+e.state: The current state of the object.
+e.submitter_id: A project-specific identifier for a node. This property is the calling
+  card/nickname/alias for a unit of submission. It can be used in place of the uuid
+  for identifying or recalling a node.
+e.time_between_clamping_and_freezing: Numeric representation of the elapsed time between
+  the surgical clamping of blood supply and freezing of the sample, measured in minutes.
+e.time_between_excision_and_freezing: Numeric representation of the elapsed time between
+  the excision and freezing of the sample, measured in minutes.
+e.tissue_collection_type: The text term used to describe the type of collection used
+  to obtain tissue.
+e.tissue_type: Text term that represents a description of the kind of tissue collected
+  with respect to disease status or proximity to tumor tissue.
+e.tumor_code: Diagnostic tumor code of the tissue sample source.
+e.tumor_code_id: BCR-defined id code for the tumor sample.
+e.tumor_descriptor: Text that describes the kind of disease present in the tumor specimen
+  as related to a specific timepoint.
+e.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+e.weight: Numeric value that represents the sample portion weight, measured in milligrams.
 files.archive.batch_id: GDC submission batch indicator. It is unique within the context
   of a project.
 files.archive.created_datetime: A combination of date and time of day in the form
@@ -2430,6 +2271,7 @@ files.archive.file_size: The size of the data file (object) in bytes.
 files.archive.file_state: The current state of the data file object.
 files.archive.md5sum: The 128-bit hash value expressed as a 32 digit hexadecimal number
   (in lower case) used as a file's digital fingerprint.
+files.archive.object_id: The GUID of the object in the index service.
 files.archive.project_id: Unique ID for any specific defined piece of work that is
   undertaken or attempted to meet a single requirement.
 files.archive.revision: The revision of this archive in the DCC.
@@ -2470,24 +2312,90 @@ files.cases.submitter_id: A project-specific identifier for a node. This propert
   is the calling card/nickname/alias for a unit of submission. It can be used in place
   of the uuid for identifying or recalling a node.
 files.cases.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+files.center.batch_id: GDC submission batch indicator. It is unique within the context
+  of a project.
 files.center.center_type: Type classification of the center (e.g. CGCC).
 files.center.code: Numeric code for the center.
+files.center.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 files.center.name: Name of the center (e.g. Broad Institute of MIT and Harvard).
 files.center.namespace: Domain name of the center (e.g. broad.mit.edu).
+files.center.project_id: Unique ID for any specific defined piece of work that is
+  undertaken or attempted to meet a single requirement.
 files.center.short_name: Shortened name of the center (e.g. BI).
+files.center.state: The current state of the object.
+files.center.submitter_id: A project-specific identifier for a node. This property
+  is the calling card/nickname/alias for a unit of submission. It can be used in place
+  of the uuid for identifying or recalling a node.
+files.center.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+files.data_format.batch_id: GDC submission batch indicator. It is unique within the
+  context of a project.
+files.data_format.created_datetime: A combination of date and time of day in the form
+  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 files.data_format.name: name of this data format
+files.data_format.project_id: Unique ID for any specific defined piece of work that
+  is undertaken or attempted to meet a single requirement.
+files.data_format.state: The current state of the object.
+files.data_format.submitter_id: A project-specific identifier for a node. This property
+  is the calling card/nickname/alias for a unit of submission. It can be used in place
+  of the uuid for identifying or recalling a node.
+files.data_format.updated_datetime: A combination of date and time of day in the form
+  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+files.data_type.batch_id: GDC submission batch indicator. It is unique within the
+  context of a project.
+files.data_type.created_datetime: A combination of date and time of day in the form
+  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+files.data_type.data_category.batch_id: GDC submission batch indicator. It is unique
+  within the context of a project.
+files.data_type.data_category.created_datetime: A combination of date and time of
+  day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 files.data_type.data_category.name: name of this data type
+files.data_type.data_category.project_id: Unique ID for any specific defined piece
+  of work that is undertaken or attempted to meet a single requirement.
+files.data_type.data_category.state: The current state of the object.
+files.data_type.data_category.submitter_id: A project-specific identifier for a node.
+  This property is the calling card/nickname/alias for a unit of submission. It can
+  be used in place of the uuid for identifying or recalling a node.
+files.data_type.data_category.updated_datetime: A combination of date and time of
+  day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 files.data_type.name: name of this data subtype
+files.data_type.project_id: Unique ID for any specific defined piece of work that
+  is undertaken or attempted to meet a single requirement.
+files.data_type.state: The current state of the object.
+files.data_type.submitter_id: A project-specific identifier for a node. This property
+  is the calling card/nickname/alias for a unit of submission. It can be used in place
+  of the uuid for identifying or recalling a node.
+files.data_type.updated_datetime: A combination of date and time of day in the form
+  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+files.experimental_strategy.batch_id: GDC submission batch indicator. It is unique
+  within the context of a project.
+files.experimental_strategy.created_datetime: A combination of date and time of day
+  in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 files.experimental_strategy.name: name of this record
+files.experimental_strategy.project_id: Unique ID for any specific defined piece of
+  work that is undertaken or attempted to meet a single requirement.
+files.experimental_strategy.state: The current state of the object.
+files.experimental_strategy.submitter_id: A project-specific identifier for a node.
+  This property is the calling card/nickname/alias for a unit of submission. It can
+  be used in place of the uuid for identifying or recalling a node.
+files.experimental_strategy.updated_datetime: A combination of date and time of day
+  in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 files.file.batch_id: GDC submission batch indicator. It is unique within the context
   of a project.
+files.file.centers: null
 files.file.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+files.file.data_category: Broad categorization of the contents of the data file.
+files.file.data_format: Format of the data files.
+files.file.data_subtypes: null
+files.file.data_type: Specific content type of the data file.
 files.file.error_type: Type of error for the data file object.
+files.file.experimental_strategy: The sequencing strategy used to generate the data
+  file.
 files.file.file_name: The name (or part of a name) of a file (of any type).
 files.file.file_size: The size of the data file (object) in bytes.
 files.file.file_state: The current state of the data file object.
 files.file.md5sum: The 128-bit hash value expressed as a 32 digit hexadecimal number
   (in lower case) used as a file's digital fingerprint.
+files.file.object_id: The GUID of the object in the index service.
 files.file.project_id: Unique ID for any specific defined piece of work that is undertaken
   or attempted to meet a single requirement.
 files.file.state: The current state of the object.
@@ -2499,14 +2407,23 @@ files.file.submitter_id: A project-specific identifier for a node. This property
 files.file.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 files.metadata_files.batch_id: GDC submission batch indicator. It is unique within
   the context of a project.
+files.metadata_files.centers: null
 files.metadata_files.created_datetime: A combination of date and time of day in the
   form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+files.metadata_files.data_category: Broad categorization of the contents of the data
+  file.
+files.metadata_files.data_format: Format of the data files.
+files.metadata_files.data_subtypes: null
+files.metadata_files.data_type: Specific content type of the data file.
 files.metadata_files.error_type: Type of error for the data file object.
+files.metadata_files.experimental_strategy: The sequencing strategy used to generate
+  the data file.
 files.metadata_files.file_name: The name (or part of a name) of a file (of any type).
 files.metadata_files.file_size: The size of the data file (object) in bytes.
 files.metadata_files.file_state: The current state of the data file object.
 files.metadata_files.md5sum: The 128-bit hash value expressed as a 32 digit hexadecimal
   number (in lower case) used as a file's digital fingerprint.
+files.metadata_files.object_id: The GUID of the object in the index service.
 files.metadata_files.project_id: Unique ID for any specific defined piece of work
   that is undertaken or attempted to meet a single requirement.
 files.metadata_files.state: The current state of the object.
@@ -2517,11 +2434,295 @@ files.metadata_files.submitter_id: A project-specific identifier for a node. Thi
   used in place of the uuid for identifying or recalling a node.
 files.metadata_files.updated_datetime: A combination of date and time of day in the
   form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+files.platform.batch_id: GDC submission batch indicator. It is unique within the context
+  of a project.
+files.platform.created_datetime: A combination of date and time of day in the form
+  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 files.platform.name: name of this platform
+files.platform.project_id: Unique ID for any specific defined piece of work that is
+  undertaken or attempted to meet a single requirement.
+files.platform.state: The current state of the object.
+files.platform.submitter_id: A project-specific identifier for a node. This property
+  is the calling card/nickname/alias for a unit of submission. It can be used in place
+  of the uuid for identifying or recalling a node.
+files.platform.updated_datetime: A combination of date and time of day in the form
+  [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+files.tags.batch_id: GDC submission batch indicator. It is unique within the context
+  of a project.
+files.tags.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 files.tags.name: name of this tag
+files.tags.project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+files.tags.state: The current state of the object.
+files.tags.submitter_id: A project-specific identifier for a node. This property is
+  the calling card/nickname/alias for a unit of submission. It can be used in place
+  of the uuid for identifying or recalling a node.
+files.tags.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+i.batch_id: GDC submission batch indicator. It is unique within the context of a project.
+i.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+i.creation_datetime: The datetime of portion creation encoded as seconds from epoch.
+i.is_ffpe: Indicator to signify whether or not the tissue sample was fixed in formalin
+  and embedded in paraffin (FFPE).
+i.portion_number: Numeric value that represents the sequential number assigned to
+  a portion of the sample.
+i.project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+i.state: The current state of the object.
+i.submitter_id: A project-specific identifier for a node. This property is the calling
+  card/nickname/alias for a unit of submission. It can be used in place of the uuid
+  for identifying or recalling a node.
+i.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+i.weight: Numeric value that represents the sample portion weight, measured in milligrams.
+l.batch_id: GDC submission batch indicator. It is unique within the context of a project.
+l.biospecimen_anatomic_site: Text term that represents the name of the organ or tissue
+  site of the submitted sample.
+l.biospecimen_laterality: For tumors in paired organs, designates the side on which
+  the specimen was obtained.
+l.catalog_reference: HCMI catalog reference number for cancer model.
+l.collection_event: The event triggering collection of the sample
+l.composition: Text term that represents the cellular composition of the sample.
+l.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+l.creation_datetime: The datetime of portion creation encoded as seconds from epoch.
+l.current_weight: Numeric value that represents the current weight of the sample,
+  measured in milligrams.
+l.days_to_collection: The number of days from the index date to the date a sample
+  was received by the Biospecimen Core Resource (BCR) or other center for processing.
+l.days_to_sample_procurement: The number of days from the index date to the date a
+  patient underwent a procedure (e.g. surgical resection) to yield or remove from
+  the patient a sample that was eventually used for research.
+l.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
+  confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
+  the diagnostic pathology review of the tumor sample used to extract analyte(s).
+l.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
+  and the normal control tissue that was procured for matching normal DNA.
+l.distributor_reference: Distributor reference number for cancer model.
+l.freezing_method: Text term that represents the method used for freezing the sample.
+l.growth_rate: Rate at which the model grows, measured as hours to time to split.
+l.initial_weight: Numeric value that represents the initial weight of the sample,
+  measured in milligrams.
+l.intermediate_dimension: Intermediate dimension of the sample, in millimeters.
+l.is_ffpe: Indicator to signify whether or not the tissue sample was fixed in formalin
+  and embedded in paraffin (FFPE).
+l.longest_dimension: Numeric value that represents the longest dimension of the sample,
+  measured in millimeters.
+l.method_of_sample_procurement: The method used to procure the sample used to extract
+  analyte(s).
+l.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
+  Temperature (OCT) compound.
+l.passage_count: Number of passages (splits) between the original tissue and this
+  model.
+l.pathology_report_uuid: UUID of the related pathology report.
+l.portion_number: Numeric value that represents the sequential number assigned to
+  a portion of the sample.
+l.preservation_method: Text term that represents the method used to preserve the sample.
+l.project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+l.sample_ordinal: A number describing the samples place in an ordered sequence.
+l.sample_type: Text term to describe the source of a biospecimen used for a laboratory
+  test.
+l.sample_type_id: The accompanying sample type id for the sample type.
+l.shortest_dimension: Numeric value that represents the shortest dimension of the
+  sample, measured in millimeters.
+l.specimen_type: The type of a material sample taken from a biological entity for
+  testing, diagnostic, propagation, treatment or research purposes. This includes
+  particular types of cellular molecules, cells, tissues, organs, body fluids, embryos,
+  and body excretory substances.
+l.state: The current state of the object.
+l.submitter_id: A project-specific identifier for a node. This property is the calling
+  card/nickname/alias for a unit of submission. It can be used in place of the uuid
+  for identifying or recalling a node.
+l.time_between_clamping_and_freezing: Numeric representation of the elapsed time between
+  the surgical clamping of blood supply and freezing of the sample, measured in minutes.
+l.time_between_excision_and_freezing: Numeric representation of the elapsed time between
+  the excision and freezing of the sample, measured in minutes.
+l.tissue_collection_type: The text term used to describe the type of collection used
+  to obtain tissue.
+l.tissue_type: Text term that represents a description of the kind of tissue collected
+  with respect to disease status or proximity to tumor tissue.
+l.tumor_code: Diagnostic tumor code of the tissue sample source.
+l.tumor_code_id: BCR-defined id code for the tumor sample.
+l.tumor_descriptor: Text that describes the kind of disease present in the tumor specimen
+  as related to a specific timepoint.
+l.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+l.weight: Numeric value that represents the sample portion weight, measured in milligrams.
+m.batch_id: GDC submission batch indicator. It is unique within the context of a project.
+m.biospecimen_anatomic_site: Text term that represents the name of the organ or tissue
+  site of the submitted sample.
+m.biospecimen_laterality: For tumors in paired organs, designates the side on which
+  the specimen was obtained.
+m.catalog_reference: HCMI catalog reference number for cancer model.
+m.collection_event: The event triggering collection of the sample
+m.composition: Text term that represents the cellular composition of the sample.
+m.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+m.creation_datetime: The datetime of portion creation encoded as seconds from epoch.
+m.current_weight: Numeric value that represents the current weight of the sample,
+  measured in milligrams.
+m.days_to_collection: The number of days from the index date to the date a sample
+  was received by the Biospecimen Core Resource (BCR) or other center for processing.
+m.days_to_sample_procurement: The number of days from the index date to the date a
+  patient underwent a procedure (e.g. surgical resection) to yield or remove from
+  the patient a sample that was eventually used for research.
+m.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
+  confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
+  the diagnostic pathology review of the tumor sample used to extract analyte(s).
+m.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
+  and the normal control tissue that was procured for matching normal DNA.
+m.distributor_reference: Distributor reference number for cancer model.
+m.freezing_method: Text term that represents the method used for freezing the sample.
+m.growth_rate: Rate at which the model grows, measured as hours to time to split.
+m.initial_weight: Numeric value that represents the initial weight of the sample,
+  measured in milligrams.
+m.intermediate_dimension: Intermediate dimension of the sample, in millimeters.
+m.is_ffpe: Indicator to signify whether or not the tissue sample was fixed in formalin
+  and embedded in paraffin (FFPE).
+m.longest_dimension: Numeric value that represents the longest dimension of the sample,
+  measured in millimeters.
+m.method_of_sample_procurement: The method used to procure the sample used to extract
+  analyte(s).
+m.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
+  Temperature (OCT) compound.
+m.passage_count: Number of passages (splits) between the original tissue and this
+  model.
+m.pathology_report_uuid: UUID of the related pathology report.
+m.portion_number: Numeric value that represents the sequential number assigned to
+  a portion of the sample.
+m.preservation_method: Text term that represents the method used to preserve the sample.
+m.project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+m.sample_ordinal: A number describing the samples place in an ordered sequence.
+m.sample_type: Text term to describe the source of a biospecimen used for a laboratory
+  test.
+m.sample_type_id: The accompanying sample type id for the sample type.
+m.shortest_dimension: Numeric value that represents the shortest dimension of the
+  sample, measured in millimeters.
+m.specimen_type: The type of a material sample taken from a biological entity for
+  testing, diagnostic, propagation, treatment or research purposes. This includes
+  particular types of cellular molecules, cells, tissues, organs, body fluids, embryos,
+  and body excretory substances.
+m.state: The current state of the object.
+m.submitter_id: A project-specific identifier for a node. This property is the calling
+  card/nickname/alias for a unit of submission. It can be used in place of the uuid
+  for identifying or recalling a node.
+m.time_between_clamping_and_freezing: Numeric representation of the elapsed time between
+  the surgical clamping of blood supply and freezing of the sample, measured in minutes.
+m.time_between_excision_and_freezing: Numeric representation of the elapsed time between
+  the excision and freezing of the sample, measured in minutes.
+m.tissue_collection_type: The text term used to describe the type of collection used
+  to obtain tissue.
+m.tissue_type: Text term that represents a description of the kind of tissue collected
+  with respect to disease status or proximity to tumor tissue.
+m.tumor_code: Diagnostic tumor code of the tissue sample source.
+m.tumor_code_id: BCR-defined id code for the tumor sample.
+m.tumor_descriptor: Text that describes the kind of disease present in the tumor specimen
+  as related to a specific timepoint.
+m.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+m.weight: Numeric value that represents the sample portion weight, measured in milligrams.
+n.batch_id: GDC submission batch indicator. It is unique within the context of a project.
+n.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+n.creation_datetime: The datetime of portion creation encoded as seconds from epoch.
+n.is_ffpe: Indicator to signify whether or not the tissue sample was fixed in formalin
+  and embedded in paraffin (FFPE).
+n.portion_number: Numeric value that represents the sequential number assigned to
+  a portion of the sample.
+n.project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+n.state: The current state of the object.
+n.submitter_id: A project-specific identifier for a node. This property is the calling
+  card/nickname/alias for a unit of submission. It can be used in place of the uuid
+  for identifying or recalling a node.
+n.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+n.weight: Numeric value that represents the sample portion weight, measured in milligrams.
+o.batch_id: GDC submission batch indicator. It is unique within the context of a project.
+o.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+o.creation_datetime: The datetime of portion creation encoded as seconds from epoch.
+o.is_ffpe: Indicator to signify whether or not the tissue sample was fixed in formalin
+  and embedded in paraffin (FFPE).
+o.portion_number: Numeric value that represents the sequential number assigned to
+  a portion of the sample.
+o.project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+o.state: The current state of the object.
+o.submitter_id: A project-specific identifier for a node. This property is the calling
+  card/nickname/alias for a unit of submission. It can be used in place of the uuid
+  for identifying or recalling a node.
+o.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+o.weight: Numeric value that represents the sample portion weight, measured in milligrams.
+p.batch_id: GDC submission batch indicator. It is unique within the context of a project.
+p.biospecimen_anatomic_site: Text term that represents the name of the organ or tissue
+  site of the submitted sample.
+p.biospecimen_laterality: For tumors in paired organs, designates the side on which
+  the specimen was obtained.
+p.catalog_reference: HCMI catalog reference number for cancer model.
+p.collection_event: The event triggering collection of the sample
+p.composition: Text term that represents the cellular composition of the sample.
+p.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+p.creation_datetime: The datetime of portion creation encoded as seconds from epoch.
+p.current_weight: Numeric value that represents the current weight of the sample,
+  measured in milligrams.
+p.days_to_collection: The number of days from the index date to the date a sample
+  was received by the Biospecimen Core Resource (BCR) or other center for processing.
+p.days_to_sample_procurement: The number of days from the index date to the date a
+  patient underwent a procedure (e.g. surgical resection) to yield or remove from
+  the patient a sample that was eventually used for research.
+p.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
+  confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
+  the diagnostic pathology review of the tumor sample used to extract analyte(s).
+p.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
+  and the normal control tissue that was procured for matching normal DNA.
+p.distributor_reference: Distributor reference number for cancer model.
+p.freezing_method: Text term that represents the method used for freezing the sample.
+p.growth_rate: Rate at which the model grows, measured as hours to time to split.
+p.initial_weight: Numeric value that represents the initial weight of the sample,
+  measured in milligrams.
+p.intermediate_dimension: Intermediate dimension of the sample, in millimeters.
+p.is_ffpe: Indicator to signify whether or not the tissue sample was fixed in formalin
+  and embedded in paraffin (FFPE).
+p.longest_dimension: Numeric value that represents the longest dimension of the sample,
+  measured in millimeters.
+p.method_of_sample_procurement: The method used to procure the sample used to extract
+  analyte(s).
+p.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
+  Temperature (OCT) compound.
+p.passage_count: Number of passages (splits) between the original tissue and this
+  model.
+p.pathology_report_uuid: UUID of the related pathology report.
+p.portion_number: Numeric value that represents the sequential number assigned to
+  a portion of the sample.
+p.preservation_method: Text term that represents the method used to preserve the sample.
+p.project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+p.sample_ordinal: A number describing the samples place in an ordered sequence.
+p.sample_type: Text term to describe the source of a biospecimen used for a laboratory
+  test.
+p.sample_type_id: The accompanying sample type id for the sample type.
+p.shortest_dimension: Numeric value that represents the shortest dimension of the
+  sample, measured in millimeters.
+p.specimen_type: The type of a material sample taken from a biological entity for
+  testing, diagnostic, propagation, treatment or research purposes. This includes
+  particular types of cellular molecules, cells, tissues, organs, body fluids, embryos,
+  and body excretory substances.
+p.state: The current state of the object.
+p.submitter_id: A project-specific identifier for a node. This property is the calling
+  card/nickname/alias for a unit of submission. It can be used in place of the uuid
+  for identifying or recalling a node.
+p.time_between_clamping_and_freezing: Numeric representation of the elapsed time between
+  the surgical clamping of blood supply and freezing of the sample, measured in minutes.
+p.time_between_excision_and_freezing: Numeric representation of the elapsed time between
+  the excision and freezing of the sample, measured in minutes.
+p.tissue_collection_type: The text term used to describe the type of collection used
+  to obtain tissue.
+p.tissue_type: Text term that represents a description of the kind of tissue collected
+  with respect to disease status or proximity to tumor tissue.
+p.tumor_code: Diagnostic tumor code of the tissue sample source.
+p.tumor_code_id: BCR-defined id code for the tumor sample.
+p.tumor_descriptor: Text that describes the kind of disease present in the tumor specimen
+  as related to a specific timepoint.
+p.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+p.weight: Numeric value that represents the sample portion weight, measured in milligrams.
 projects.program.dbgap_accession_number: The dbgap accession number provided for the
   program.
 projects.program.name: Full name/title of the program.
+projects.project.availability_type: Is the project open or restricted?
 projects.project.awg_review: Indicates that the project is an AWG project.
 projects.project.code: Project code
 projects.project.dbgap_accession_number: The dbgap accession number for the project.
@@ -2544,3 +2745,105 @@ projects.project.request_submission: Indicates that the user has requested submi
 projects.project.state: The possible states a project can be in.  All but `open` are
   equivalent to some type of locked state.
 projects.project.submission_enabled: Indicates if submission to a project is allowed.
+r.batch_id: GDC submission batch indicator. It is unique within the context of a project.
+r.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+r.creation_datetime: The datetime of portion creation encoded as seconds from epoch.
+r.is_ffpe: Indicator to signify whether or not the tissue sample was fixed in formalin
+  and embedded in paraffin (FFPE).
+r.portion_number: Numeric value that represents the sequential number assigned to
+  a portion of the sample.
+r.project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+r.state: The current state of the object.
+r.submitter_id: A project-specific identifier for a node. This property is the calling
+  card/nickname/alias for a unit of submission. It can be used in place of the uuid
+  for identifying or recalling a node.
+r.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+r.weight: Numeric value that represents the sample portion weight, measured in milligrams.
+s.batch_id: GDC submission batch indicator. It is unique within the context of a project.
+s.biospecimen_anatomic_site: Text term that represents the name of the organ or tissue
+  site of the submitted sample.
+s.biospecimen_laterality: For tumors in paired organs, designates the side on which
+  the specimen was obtained.
+s.catalog_reference: HCMI catalog reference number for cancer model.
+s.collection_event: The event triggering collection of the sample
+s.composition: Text term that represents the cellular composition of the sample.
+s.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+s.creation_datetime: The datetime of portion creation encoded as seconds from epoch.
+s.current_weight: Numeric value that represents the current weight of the sample,
+  measured in milligrams.
+s.days_to_collection: The number of days from the index date to the date a sample
+  was received by the Biospecimen Core Resource (BCR) or other center for processing.
+s.days_to_sample_procurement: The number of days from the index date to the date a
+  patient underwent a procedure (e.g. surgical resection) to yield or remove from
+  the patient a sample that was eventually used for research.
+s.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
+  confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
+  the diagnostic pathology review of the tumor sample used to extract analyte(s).
+s.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
+  and the normal control tissue that was procured for matching normal DNA.
+s.distributor_reference: Distributor reference number for cancer model.
+s.freezing_method: Text term that represents the method used for freezing the sample.
+s.growth_rate: Rate at which the model grows, measured as hours to time to split.
+s.initial_weight: Numeric value that represents the initial weight of the sample,
+  measured in milligrams.
+s.intermediate_dimension: Intermediate dimension of the sample, in millimeters.
+s.is_ffpe: Indicator to signify whether or not the tissue sample was fixed in formalin
+  and embedded in paraffin (FFPE).
+s.longest_dimension: Numeric value that represents the longest dimension of the sample,
+  measured in millimeters.
+s.method_of_sample_procurement: The method used to procure the sample used to extract
+  analyte(s).
+s.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
+  Temperature (OCT) compound.
+s.passage_count: Number of passages (splits) between the original tissue and this
+  model.
+s.pathology_report_uuid: UUID of the related pathology report.
+s.portion_number: Numeric value that represents the sequential number assigned to
+  a portion of the sample.
+s.preservation_method: Text term that represents the method used to preserve the sample.
+s.project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+s.sample_ordinal: A number describing the samples place in an ordered sequence.
+s.sample_type: Text term to describe the source of a biospecimen used for a laboratory
+  test.
+s.sample_type_id: The accompanying sample type id for the sample type.
+s.shortest_dimension: Numeric value that represents the shortest dimension of the
+  sample, measured in millimeters.
+s.specimen_type: The type of a material sample taken from a biological entity for
+  testing, diagnostic, propagation, treatment or research purposes. This includes
+  particular types of cellular molecules, cells, tissues, organs, body fluids, embryos,
+  and body excretory substances.
+s.state: The current state of the object.
+s.submitter_id: A project-specific identifier for a node. This property is the calling
+  card/nickname/alias for a unit of submission. It can be used in place of the uuid
+  for identifying or recalling a node.
+s.time_between_clamping_and_freezing: Numeric representation of the elapsed time between
+  the surgical clamping of blood supply and freezing of the sample, measured in minutes.
+s.time_between_excision_and_freezing: Numeric representation of the elapsed time between
+  the excision and freezing of the sample, measured in minutes.
+s.tissue_collection_type: The text term used to describe the type of collection used
+  to obtain tissue.
+s.tissue_type: Text term that represents a description of the kind of tissue collected
+  with respect to disease status or proximity to tumor tissue.
+s.tumor_code: Diagnostic tumor code of the tissue sample source.
+s.tumor_code_id: BCR-defined id code for the tumor sample.
+s.tumor_descriptor: Text that describes the kind of disease present in the tumor specimen
+  as related to a specific timepoint.
+s.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+s.weight: Numeric value that represents the sample portion weight, measured in milligrams.
+t.batch_id: GDC submission batch indicator. It is unique within the context of a project.
+t.created_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+t.creation_datetime: The datetime of portion creation encoded as seconds from epoch.
+t.is_ffpe: Indicator to signify whether or not the tissue sample was fixed in formalin
+  and embedded in paraffin (FFPE).
+t.portion_number: Numeric value that represents the sequential number assigned to
+  a portion of the sample.
+t.project_id: Unique ID for any specific defined piece of work that is undertaken
+  or attempted to meet a single requirement.
+t.state: The current state of the object.
+t.submitter_id: A project-specific identifier for a node. This property is the calling
+  card/nickname/alias for a unit of submission. It can be used in place of the uuid
+  for identifying or recalling a node.
+t.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+t.weight: Numeric value that represents the sample portion weight, measured in milligrams.

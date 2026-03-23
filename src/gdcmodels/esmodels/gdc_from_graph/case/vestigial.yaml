@@ -1,1 +1,406 @@
---- {}
+dictionary_item_added:
+  root['properties']['annotations']:
+    properties:
+      annotation_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_submitter_id:
+        type: keyword
+      category:
+        normalizer: clinical_normalizer
+        type: keyword
+      classification:
+        normalizer: clinical_normalizer
+        type: keyword
+      created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      creator:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_submitter_id:
+        type: keyword
+      entity_type:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      notes:
+        normalizer: clinical_normalizer
+        type: keyword
+      state:
+        normalizer: clinical_normalizer
+        type: keyword
+      status:
+        normalizer: clinical_normalizer
+        type: keyword
+      submitter_id:
+        type: keyword
+      updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+    type: nested
+  root['properties']['demographic']['properties']['sex_at_birth']:
+    normalizer: clinical_normalizer
+    type: keyword
+  root['properties']['diagnoses']['properties']['annotations']:
+    properties:
+      annotation_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_submitter_id:
+        type: keyword
+      category:
+        normalizer: clinical_normalizer
+        type: keyword
+      classification:
+        normalizer: clinical_normalizer
+        type: keyword
+      created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      creator:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_submitter_id:
+        type: keyword
+      entity_type:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      notes:
+        normalizer: clinical_normalizer
+        type: keyword
+      state:
+        normalizer: clinical_normalizer
+        type: keyword
+      status:
+        normalizer: clinical_normalizer
+        type: keyword
+      submitter_id:
+        type: keyword
+      updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+    type: nested
+  root['properties']['diagnoses']['properties']['pathology_details']['properties']['breslow_thickness_category']:
+    normalizer: clinical_normalizer
+    type: keyword
+  root['properties']['family_histories']['properties']['relationship_sex_at_birth']:
+    normalizer: clinical_normalizer
+    type: keyword
+  root['properties']['files']['properties']['analysis']['properties']['input_files']['properties']['tmb']:
+    type: double
+  root['properties']['files']['properties']['analysis']['properties']['input_files']['properties']['tmb_exonic']:
+    type: double
+  root['properties']['files']['properties']['analysis']['properties']['input_files']['properties']['tmb_nonsynonymous']:
+    type: double
+  root['properties']['files']['properties']['analysis']['properties']['input_files']['properties']['tmb_nonsynonymous_exonic']:
+    type: double
+  root['properties']['files']['properties']['downstream_analyses']['properties']['output_files']['properties']['tmb']:
+    type: double
+  root['properties']['files']['properties']['downstream_analyses']['properties']['output_files']['properties']['tmb_exonic']:
+    type: double
+  ? root['properties']['files']['properties']['downstream_analyses']['properties']['output_files']['properties']['tmb_nonsynonymous']
+  : type: double
+  ? root['properties']['files']['properties']['downstream_analyses']['properties']['output_files']['properties']['tmb_nonsynonymous_exonic']
+  : type: double
+  root['properties']['files']['properties']['index_files']['properties']['tmb']:
+    type: double
+  root['properties']['files']['properties']['index_files']['properties']['tmb_exonic']:
+    type: double
+  root['properties']['files']['properties']['index_files']['properties']['tmb_nonsynonymous']:
+    type: double
+  root['properties']['files']['properties']['index_files']['properties']['tmb_nonsynonymous_exonic']:
+    type: double
+  root['properties']['files']['properties']['tmb']:
+    type: double
+  root['properties']['files']['properties']['tmb_exonic']:
+    type: double
+  root['properties']['files']['properties']['tmb_nonsynonymous']:
+    type: double
+  root['properties']['files']['properties']['tmb_nonsynonymous_exonic']:
+    type: double
+  root['properties']['follow_ups']['properties']['other_clinical_attributes']['properties']['fertility_history']:
+    normalizer: clinical_normalizer
+    type: keyword
+  root['properties']['samples']['properties']['annotations']:
+    properties:
+      annotation_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_submitter_id:
+        type: keyword
+      category:
+        normalizer: clinical_normalizer
+        type: keyword
+      classification:
+        normalizer: clinical_normalizer
+        type: keyword
+      created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      creator:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_submitter_id:
+        type: keyword
+      entity_type:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      notes:
+        normalizer: clinical_normalizer
+        type: keyword
+      state:
+        normalizer: clinical_normalizer
+        type: keyword
+      status:
+        normalizer: clinical_normalizer
+        type: keyword
+      submitter_id:
+        type: keyword
+      updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+    type: nested
+  ? root['properties']['samples']['properties']['portions']['properties']['analytes']['properties']['aliquots']['properties']['annotations']
+  : properties:
+      annotation_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_submitter_id:
+        type: keyword
+      category:
+        normalizer: clinical_normalizer
+        type: keyword
+      classification:
+        normalizer: clinical_normalizer
+        type: keyword
+      created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      creator:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_submitter_id:
+        type: keyword
+      entity_type:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      notes:
+        normalizer: clinical_normalizer
+        type: keyword
+      state:
+        normalizer: clinical_normalizer
+        type: keyword
+      status:
+        normalizer: clinical_normalizer
+        type: keyword
+      submitter_id:
+        type: keyword
+      updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+    type: nested
+  root['properties']['samples']['properties']['portions']['properties']['analytes']['properties']['annotations']:
+    properties:
+      annotation_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_submitter_id:
+        type: keyword
+      category:
+        normalizer: clinical_normalizer
+        type: keyword
+      classification:
+        normalizer: clinical_normalizer
+        type: keyword
+      created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      creator:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_submitter_id:
+        type: keyword
+      entity_type:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      notes:
+        normalizer: clinical_normalizer
+        type: keyword
+      state:
+        normalizer: clinical_normalizer
+        type: keyword
+      status:
+        normalizer: clinical_normalizer
+        type: keyword
+      submitter_id:
+        type: keyword
+      updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+    type: nested
+  root['properties']['samples']['properties']['portions']['properties']['analytes']['properties']['dna_integrity_number']:
+    type: double
+  root['properties']['samples']['properties']['portions']['properties']['analytes']['properties']['ribosomal_rna_28s_18s_ratio']:
+    type: double
+  root['properties']['samples']['properties']['portions']['properties']['annotations']:
+    properties:
+      annotation_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_submitter_id:
+        type: keyword
+      category:
+        normalizer: clinical_normalizer
+        type: keyword
+      classification:
+        normalizer: clinical_normalizer
+        type: keyword
+      created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      creator:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_submitter_id:
+        type: keyword
+      entity_type:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      notes:
+        normalizer: clinical_normalizer
+        type: keyword
+      state:
+        normalizer: clinical_normalizer
+        type: keyword
+      status:
+        normalizer: clinical_normalizer
+        type: keyword
+      submitter_id:
+        type: keyword
+      updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+    type: nested
+  root['properties']['samples']['properties']['portions']['properties']['slides']['properties']['annotations']:
+    properties:
+      annotation_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      case_submitter_id:
+        type: keyword
+      category:
+        normalizer: clinical_normalizer
+        type: keyword
+      classification:
+        normalizer: clinical_normalizer
+        type: keyword
+      created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      creator:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      entity_submitter_id:
+        type: keyword
+      entity_type:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      legacy_updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      notes:
+        normalizer: clinical_normalizer
+        type: keyword
+      state:
+        normalizer: clinical_normalizer
+        type: keyword
+      status:
+        normalizer: clinical_normalizer
+        type: keyword
+      submitter_id:
+        type: keyword
+      updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+    type: nested

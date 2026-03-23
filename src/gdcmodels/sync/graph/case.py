@@ -21,7 +21,7 @@ class Synchronizer(common.GraphSynchronizer):
     def _get_file_properties(self) -> common.NestedDict:
         properties = self._files.load_properties()
 
-        del properties["annotations"]
+        # del properties["annotations"]
         del properties["associated_entities"]
 
         return properties
