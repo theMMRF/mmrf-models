@@ -14,7 +14,8 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
-  "Programming Language :: PythonLicense :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python",
+  "License :: OSI Approved :: Apache Software License",
   "Topic :: Software Development :: Libraries :: Python Modules"
 ]
 dependencies = [
