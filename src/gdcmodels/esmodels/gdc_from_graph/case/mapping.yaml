@@ -104,6 +104,26 @@ properties:
         normalizer: clinical_normalizer
         type: keyword
     type: nested
+  case_autocomplete:
+    fields:
+      analyzed:
+        analyzer: autocomplete_analyzed
+        search_analyzer: lowercase_keyword
+        type: text
+      lowercase:
+        analyzer: lowercase_keyword
+        type: text
+      prefix:
+        analyzer: autocomplete_prefix
+        search_analyzer: lowercase_keyword
+        type: text
+    normalizer: clinical_normalizer
+    type: keyword
+  case_id:
+    copy_to:
+    - case_autocomplete
+    normalizer: clinical_normalizer
+    type: keyword
   cgs_risk_key_criteria:
     properties:
       cgs_risk_category:
@@ -169,26 +189,6 @@ properties:
         normalizer: clinical_normalizer
         type: keyword
     type: nested
-  case_autocomplete:
-    fields:
-      analyzed:
-        analyzer: autocomplete_analyzed
-        search_analyzer: lowercase_keyword
-        type: text
-      lowercase:
-        analyzer: lowercase_keyword
-        type: text
-      prefix:
-        analyzer: autocomplete_prefix
-        search_analyzer: lowercase_keyword
-        type: text
-    normalizer: clinical_normalizer
-    type: keyword
-  case_id:
-    copy_to:
-    - case_autocomplete
-    normalizer: clinical_normalizer
-    type: keyword
   consent_type:
     normalizer: clinical_normalizer
     type: keyword

@@ -577,6 +577,9 @@ properties:
             normalizer: clinical_normalizer
             type: keyword
         type: nested
+      case_id:
+        normalizer: clinical_normalizer
+        type: keyword
       cgs_risk_key_criteria:
         properties:
           cgs_risk_category:
@@ -642,9 +645,6 @@ properties:
             normalizer: clinical_normalizer
             type: keyword
         type: nested
-      case_id:
-        normalizer: clinical_normalizer
-        type: keyword
       consent_type:
         normalizer: clinical_normalizer
         type: keyword
