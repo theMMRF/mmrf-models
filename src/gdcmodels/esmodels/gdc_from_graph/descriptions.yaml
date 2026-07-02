@@ -243,6 +243,38 @@ cases.case.submitter_id: A project-specific identifier for a node. This property
   the calling card/nickname/alias for a unit of submission. It can be used in place
   of the uuid for identifying or recalling a node.
 cases.case.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+cases.cgs_risk_key_criteria.batch_id: GDC submission batch indicator. It is unique
+  within the context of a project.
+cases.cgs_risk_key_criteria.cgs_risk_category: Final CGS risk classification (High/Standard/NA)
+cases.cgs_risk_key_criteria.created_datetime: A combination of date and time of day
+  in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+cases.cgs_risk_key_criteria.criteria_1: 'Meets CGS Criterion 1: del(17p), with a cutoff
+  of >20% clonal fraction, and/or TP53 mutation'
+cases.cgs_risk_key_criteria.criteria_2: 'Meets CGS Criterion 2: t(4;14), t(14;16),
+  or t(14;20) plus 1q+ or del(1p32)'
+cases.cgs_risk_key_criteria.criteria_3: 'Meets CGS Criterion 3: monoallelic del(1p32)
+  with 1q+ or biallelic del(1p32)'
+cases.cgs_risk_key_criteria.criteria_4: 'Meets CGS Criterion 4: B2M >= 5.5 mg/L with
+  normal creatinine (< 1.2 mg/dL)'
+cases.cgs_risk_key_criteria.has_1q: Gain/amplification of 1q
+cases.cgs_risk_key_criteria.has_bi_del1p32: Biallelic deletion of 1p32
+cases.cgs_risk_key_criteria.has_del17p13: Presence of del(17p13)
+cases.cgs_risk_key_criteria.has_del1p32: Any deletion of 1p32
+cases.cgs_risk_key_criteria.has_high_b2m: "Elevated \u03B22-microglobulin (>5.5 mg/L)"
+cases.cgs_risk_key_criteria.has_mono_del1p32: Monoallelic deletion of 1p32
+cases.cgs_risk_key_criteria.has_normal_creatinine: Creatinine <1.2 mg/dL
+cases.cgs_risk_key_criteria.has_t1416: t(14;16) translocation
+cases.cgs_risk_key_criteria.has_t1420: t(14;20) translocation
+cases.cgs_risk_key_criteria.has_t414: t(4;14) translocation
+cases.cgs_risk_key_criteria.has_tp53_mutation: TP53 mutation present
+cases.cgs_risk_key_criteria.project_id: Unique ID for any specific defined piece of
+  work that is undertaken or attempted to meet a single requirement.
+cases.cgs_risk_key_criteria.state: The current state of the object.
+cases.cgs_risk_key_criteria.submitter_id: A project-specific identifier for a node.
+  This property is the calling card/nickname/alias for a unit of submission. It can
+  be used in place of the uuid for identifying or recalling a node.
+cases.cgs_risk_key_criteria.updated_datetime: A combination of date and time of day
+  in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.demographic.age_at_index: Subject's age at the time of first therapy for multiple
   myeloma diagnosis.
 cases.demographic.age_is_obfuscated: The age or other properties related to the patient's

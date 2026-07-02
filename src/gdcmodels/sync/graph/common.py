@@ -163,6 +163,7 @@ class DescriptionsSynchronizer(common.Synchronizer):
                 "cases.samples.portions.analytes.aliquots.center",
                 "files.center",
             ),
+            models.CgsRiskKeyCriteria: ("cases.cgs_risk_key_criteria",),
             models.DataFormat: ("files.data_format",),
             models.DataSubtype: ("files.data_type",),
             models.DataType: ("files.data_type.data_category",),
@@ -530,6 +531,10 @@ class CaseProperties:
         )
         properties["bone_assessments"] = NestedDict(
             properties=_load_properties_from(models.BoneAssessment),
+            type="nested",
+        )
+        properties["cgs_risk_key_criteria"] = NestedDict(
+            properties=_load_properties_from(models.CgsRiskKeyCriteria),
             type="nested",
         )
         properties["outcomes"] = NestedDict(

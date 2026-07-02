@@ -124,6 +124,71 @@ properties:
     - case_autocomplete
     normalizer: clinical_normalizer
     type: keyword
+  cgs_risk_key_criteria:
+    properties:
+      cgs_risk_category:
+        normalizer: clinical_normalizer
+        type: keyword
+      cgs_risk_key_criteria_id:
+        normalizer: clinical_normalizer
+        type: keyword
+      created_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+      criteria_1:
+        normalizer: clinical_normalizer
+        type: keyword
+      criteria_2:
+        normalizer: clinical_normalizer
+        type: keyword
+      criteria_3:
+        normalizer: clinical_normalizer
+        type: keyword
+      criteria_4:
+        normalizer: clinical_normalizer
+        type: keyword
+      has_1q:
+        normalizer: clinical_normalizer
+        type: keyword
+      has_bi_del1p32:
+        normalizer: clinical_normalizer
+        type: keyword
+      has_del17p13:
+        normalizer: clinical_normalizer
+        type: keyword
+      has_del1p32:
+        normalizer: clinical_normalizer
+        type: keyword
+      has_high_b2m:
+        normalizer: clinical_normalizer
+        type: keyword
+      has_mono_del1p32:
+        normalizer: clinical_normalizer
+        type: keyword
+      has_normal_creatinine:
+        normalizer: clinical_normalizer
+        type: keyword
+      has_t1416:
+        normalizer: clinical_normalizer
+        type: keyword
+      has_t1420:
+        normalizer: clinical_normalizer
+        type: keyword
+      has_t414:
+        normalizer: clinical_normalizer
+        type: keyword
+      has_tp53_mutation:
+        normalizer: clinical_normalizer
+        type: keyword
+      state:
+        normalizer: clinical_normalizer
+        type: keyword
+      submitter_id:
+        type: keyword
+      updated_datetime:
+        normalizer: clinical_normalizer
+        type: keyword
+    type: nested
   consent_type:
     normalizer: clinical_normalizer
     type: keyword
