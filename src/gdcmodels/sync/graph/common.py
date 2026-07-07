@@ -535,7 +535,6 @@ class CaseProperties:
         )
         properties["cgs_risk_key_criteria"] = NestedDict(
             properties=_load_properties_from(models.CgsRiskKeyCriteria),
-            type="nested",
         )
         properties["outcomes"] = NestedDict(
             properties=_load_properties_from(models.Outcomes),
