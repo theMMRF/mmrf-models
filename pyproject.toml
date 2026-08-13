@@ -37,7 +37,11 @@ requires-python = ">=3.9"
 
 [project.optional-dependencies]
 dev = ["coverage", "elasticsearch-dsl~=7.0", "pytest"]
-sync = ["click", "gdcdictionary", "gdcdatamodel2"]
+sync = [
+  "click",
+  "gdcdictionary @ git+https://github.com/theMMRF/mmrf_dictionary.git@master",
+  "gdcdatamodel2 @ git+https://github.com/theMMRF/mmrfdatamodel2.git@mmrf"
+]
 
 [project.scripts]
 init_index = "gdcmodels.init_index:main"

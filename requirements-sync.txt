@@ -18,9 +18,9 @@ deepdiff==8.5.0
     # via gdcmodels (pyproject.toml)
 elasticsearch==7.17.12
     # via gdcmodels (pyproject.toml)
-gdcdatamodel2==3.4.4
+gdcdatamodel2 @ git+https://github.com/theMMRF/mmrfdatamodel2.git@mmrf
     # via gdcmodels (pyproject.toml)
-gdcdictionary==3.4.4
+gdcdictionary @ git+https://github.com/theMMRF/mmrf_dictionary.git@master
     # via gdcmodels (pyproject.toml)
 greenlet==3.2.3
     # via sqlalchemy
