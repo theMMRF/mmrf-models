@@ -245,14 +245,18 @@ cases.case.submitter_id: A project-specific identifier for a node. This property
 cases.case.updated_datetime: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.cgs_risk_key_criteria.batch_id: GDC submission batch indicator. It is unique
   within the context of a project.
-cases.cgs_risk_key_criteria.cgs_risk_category: Final CGS risk classification (High/Standard/NA)
-cases.cgs_risk_key_criteria.cgs_risk_criteria: The Clinical Genomic Scoring (CGS)
+cases.cgs_risk_key_criteria.cgs_risk_category: The International Myeloma Society (IMS)
+  and International Myeloma Working Group (IMWG) Consensus Genomic Staging (CGS) defines
+  high-risk multiple myeloma using specific molecular, genetic, and biochemical markers
+  to better predict patient survival and early relapse. This property records the
+  final CGS risk classification (High Risk/Standard Risk/NA).
+cases.cgs_risk_key_criteria.cgs_risk_criteria: The Consensus Genomic Staging (CGS)
   risk criteria met by the case. Only criteria with a positive result are included;
   negative and unavailable criterion results are omitted.
 cases.cgs_risk_key_criteria.created_datetime: A combination of date and time of day
   in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.cgs_risk_key_criteria.other_criteria: Known positive and negative results for
-  genomic and laboratory criteria used to derive Clinical Genomic Scoring (CGS) risk.
+  genomic and laboratory criteria used to derive Consensus Genomic Staging (CGS) risk.
   Unavailable results are omitted.
 cases.cgs_risk_key_criteria.project_id: Unique ID for any specific defined piece of
   work that is undertaken or attempted to meet a single requirement.
