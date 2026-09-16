@@ -253,6 +253,8 @@ cases.cgs_risk_key_criteria.cgs_risk_category: The International Myeloma Society
 cases.cgs_risk_key_criteria.cgs_risk_criteria: The Consensus Genomic Staging (CGS)
   risk criteria met by the case. Only criteria with a positive result are included;
   negative and unavailable criterion results are omitted.
+cases.cgs_risk_key_criteria.collection_event: The event triggering collection of the
+  sample
 cases.cgs_risk_key_criteria.created_datetime: A combination of date and time of day
   in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 cases.cgs_risk_key_criteria.other_criteria: Known positive and negative results for
