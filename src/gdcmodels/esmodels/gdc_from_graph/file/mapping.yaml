@@ -591,6 +591,9 @@ properties:
           cgs_risk_key_criteria_id:
             normalizer: clinical_normalizer
             type: keyword
+          collection_event:
+            normalizer: clinical_normalizer
+            type: keyword
           created_datetime:
             normalizer: clinical_normalizer
             type: keyword
