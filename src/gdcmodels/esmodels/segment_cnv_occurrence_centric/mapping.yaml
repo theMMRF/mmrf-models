@@ -534,6 +534,9 @@ properties:
             type: keyword
       samples:
         properties:
+          disease_stage:
+            normalizer: clinical_normalizer
+            type: keyword
           preservation_method:
             normalizer: clinical_normalizer
             type: keyword

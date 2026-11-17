@@ -18,6 +18,9 @@
 ..diagnosis_pathologically_confirmed: The histologic description of tissue or cells
   confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
   the diagnostic pathology review of the tumor sample used to extract analyte(s).
+..disease_stage: The patient's plasma cell disease stage when the sample was collected,
+  normalized across studies so that samples can be compared and filtered. Healthy
+  means a donor with no known plasma cell disorder.
 ..distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
   and the normal control tissue that was procured for matching normal DNA.
 ..distributor_reference: Distributor reference number for cancer model.
@@ -90,6 +93,9 @@ a.days_to_sample_procurement: The number of days from the index date to the date
 a.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
   confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
   the diagnostic pathology review of the tumor sample used to extract analyte(s).
+a.disease_stage: The patient's plasma cell disease stage when the sample was collected,
+  normalized across studies so that samples can be compared and filtered. Healthy
+  means a donor with no known plasma cell disorder.
 a.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
   and the normal control tissue that was procured for matching normal DNA.
 a.distributor_reference: Distributor reference number for cancer model.
@@ -162,6 +168,9 @@ c.days_to_sample_procurement: The number of days from the index date to the date
 c.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
   confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
   the diagnostic pathology review of the tumor sample used to extract analyte(s).
+c.disease_stage: The patient's plasma cell disease stage when the sample was collected,
+  normalized across studies so that samples can be compared and filtered. Healthy
+  means a donor with no known plasma cell disorder.
 c.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
   and the normal control tissue that was procured for matching normal DNA.
 c.distributor_reference: Distributor reference number for cancer model.
@@ -327,8 +336,8 @@ cases.diagnoses.adrenal_hormone: Indicates the presence of the adrenal hormone. 
   adrenal hormone is made from cholesterol and protein produced by the adrenal glands
   and regulate electrolyte balance, blood pressure, inflammation, blood sugar balance,
   and immune system control.
-cases.diagnoses.age_at_diagnosis: Age at the time of study entry/diagnosis expressed
-  in number of days since birth.
+cases.diagnoses.age_at_diagnosis: Age at the time of study entry/diagnosis, in years.
+  MMRF Virtual Lab returns this field in years; do not apply a days-to-years conversion.
 cases.diagnoses.ajcc_clinical_m: Extent of the distant metastasis for the cancer based
   on evidence obtained from clinical assessment parameters determined prior to treatment.
 cases.diagnoses.ajcc_clinical_n: Extent of the regional lymph node involvement for
@@ -2231,6 +2240,9 @@ e.days_to_sample_procurement: The number of days from the index date to the date
 e.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
   confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
   the diagnostic pathology review of the tumor sample used to extract analyte(s).
+e.disease_stage: The patient's plasma cell disease stage when the sample was collected,
+  normalized across studies so that samples can be compared and filtered. Healthy
+  means a donor with no known plasma cell disorder.
 e.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
   and the normal control tissue that was procured for matching normal DNA.
 e.distributor_reference: Distributor reference number for cancer model.
@@ -2518,6 +2530,9 @@ l.days_to_sample_procurement: The number of days from the index date to the date
 l.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
   confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
   the diagnostic pathology review of the tumor sample used to extract analyte(s).
+l.disease_stage: The patient's plasma cell disease stage when the sample was collected,
+  normalized across studies so that samples can be compared and filtered. Healthy
+  means a donor with no known plasma cell disorder.
 l.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
   and the normal control tissue that was procured for matching normal DNA.
 l.distributor_reference: Distributor reference number for cancer model.
@@ -2590,6 +2605,9 @@ m.days_to_sample_procurement: The number of days from the index date to the date
 m.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
   confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
   the diagnostic pathology review of the tumor sample used to extract analyte(s).
+m.disease_stage: The patient's plasma cell disease stage when the sample was collected,
+  normalized across studies so that samples can be compared and filtered. Healthy
+  means a donor with no known plasma cell disorder.
 m.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
   and the normal control tissue that was procured for matching normal DNA.
 m.distributor_reference: Distributor reference number for cancer model.
@@ -2692,6 +2710,9 @@ p.days_to_sample_procurement: The number of days from the index date to the date
 p.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
   confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
   the diagnostic pathology review of the tumor sample used to extract analyte(s).
+p.disease_stage: The patient's plasma cell disease stage when the sample was collected,
+  normalized across studies so that samples can be compared and filtered. Healthy
+  means a donor with no known plasma cell disorder.
 p.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
   and the normal control tissue that was procured for matching normal DNA.
 p.distributor_reference: Distributor reference number for cancer model.
@@ -2805,6 +2826,9 @@ s.days_to_sample_procurement: The number of days from the index date to the date
 s.diagnosis_pathologically_confirmed: The histologic description of tissue or cells
   confirmed by a pathology review of frozen or formalin fixed slide(s) completed after
   the diagnostic pathology review of the tumor sample used to extract analyte(s).
+s.disease_stage: The patient's plasma cell disease stage when the sample was collected,
+  normalized across studies so that samples can be compared and filtered. Healthy
+  means a donor with no known plasma cell disorder.
 s.distance_normal_to_tumor: Text term to signify the distance between the tumor tissue
   and the normal control tissue that was procured for matching normal DNA.
 s.distributor_reference: Distributor reference number for cancer model.
