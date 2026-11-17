@@ -3161,6 +3161,9 @@ properties:
       diagnosis_pathologically_confirmed:
         normalizer: clinical_normalizer
         type: keyword
+      disease_stage:
+        normalizer: clinical_normalizer
+        type: keyword
       distance_normal_to_tumor:
         normalizer: clinical_normalizer
         type: keyword
