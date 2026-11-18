@@ -37,6 +37,9 @@
   analyte(s).
 ..oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
   Temperature (OCT) compound.
+..original_sample_id: The sample identifier exactly as the contributing study recorded
+  it, before it was given this data commons' submitter ID. Use it to trace a sample
+  back to the study's own records.
 ..passage_count: Number of passages (splits) between the original tissue and this
   model.
 ..pathology_report_uuid: UUID of the related pathology report.
@@ -112,6 +115,9 @@ a.method_of_sample_procurement: The method used to procure the sample used to ex
   analyte(s).
 a.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
   Temperature (OCT) compound.
+a.original_sample_id: The sample identifier exactly as the contributing study recorded
+  it, before it was given this data commons' submitter ID. Use it to trace a sample
+  back to the study's own records.
 a.passage_count: Number of passages (splits) between the original tissue and this
   model.
 a.pathology_report_uuid: UUID of the related pathology report.
@@ -187,6 +193,9 @@ c.method_of_sample_procurement: The method used to procure the sample used to ex
   analyte(s).
 c.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
   Temperature (OCT) compound.
+c.original_sample_id: The sample identifier exactly as the contributing study recorded
+  it, before it was given this data commons' submitter ID. Use it to trace a sample
+  back to the study's own records.
 c.passage_count: Number of passages (splits) between the original tissue and this
   model.
 c.pathology_report_uuid: UUID of the related pathology report.
@@ -240,6 +249,9 @@ cases.case.index_date: The text term used to describe the reference or anchor da
   or more date ranges in relation to this date.
 cases.case.lost_to_followup: The yes/no/unknown indicator used to describe whether
   a patient was unable to be contacted or seen for follow-up information.
+cases.case.original_subject_id: The participant identifier exactly as the contributing
+  study recorded it, before it was given this data commons' submitter ID. Use it to
+  trace a case back to the study's own records.
 cases.case.primary_site: The text term used to describe the primary site of disease,
   as categorized by the World Health Organization's (WHO) International Classification
   of Diseases for Oncology (ICD-O). This categorization groups cases into general
@@ -2259,6 +2271,9 @@ e.method_of_sample_procurement: The method used to procure the sample used to ex
   analyte(s).
 e.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
   Temperature (OCT) compound.
+e.original_sample_id: The sample identifier exactly as the contributing study recorded
+  it, before it was given this data commons' submitter ID. Use it to trace a sample
+  back to the study's own records.
 e.passage_count: Number of passages (splits) between the original tissue and this
   model.
 e.pathology_report_uuid: UUID of the related pathology report.
@@ -2337,6 +2352,9 @@ files.cases.index_date: The text term used to describe the reference or anchor d
   or more date ranges in relation to this date.
 files.cases.lost_to_followup: The yes/no/unknown indicator used to describe whether
   a patient was unable to be contacted or seen for follow-up information.
+files.cases.original_subject_id: The participant identifier exactly as the contributing
+  study recorded it, before it was given this data commons' submitter ID. Use it to
+  trace a case back to the study's own records.
 files.cases.primary_site: The text term used to describe the primary site of disease,
   as categorized by the World Health Organization's (WHO) International Classification
   of Diseases for Oncology (ICD-O). This categorization groups cases into general
@@ -2549,6 +2567,9 @@ l.method_of_sample_procurement: The method used to procure the sample used to ex
   analyte(s).
 l.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
   Temperature (OCT) compound.
+l.original_sample_id: The sample identifier exactly as the contributing study recorded
+  it, before it was given this data commons' submitter ID. Use it to trace a sample
+  back to the study's own records.
 l.passage_count: Number of passages (splits) between the original tissue and this
   model.
 l.pathology_report_uuid: UUID of the related pathology report.
@@ -2624,6 +2645,9 @@ m.method_of_sample_procurement: The method used to procure the sample used to ex
   analyte(s).
 m.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
   Temperature (OCT) compound.
+m.original_sample_id: The sample identifier exactly as the contributing study recorded
+  it, before it was given this data commons' submitter ID. Use it to trace a sample
+  back to the study's own records.
 m.passage_count: Number of passages (splits) between the original tissue and this
   model.
 m.pathology_report_uuid: UUID of the related pathology report.
@@ -2729,6 +2753,9 @@ p.method_of_sample_procurement: The method used to procure the sample used to ex
   analyte(s).
 p.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
   Temperature (OCT) compound.
+p.original_sample_id: The sample identifier exactly as the contributing study recorded
+  it, before it was given this data commons' submitter ID. Use it to trace a sample
+  back to the study's own records.
 p.passage_count: Number of passages (splits) between the original tissue and this
   model.
 p.pathology_report_uuid: UUID of the related pathology report.
@@ -2845,6 +2872,9 @@ s.method_of_sample_procurement: The method used to procure the sample used to ex
   analyte(s).
 s.oct_embedded: Indicator of whether or not the sample was embedded in Optimal Cutting
   Temperature (OCT) compound.
+s.original_sample_id: The sample identifier exactly as the contributing study recorded
+  it, before it was given this data commons' submitter ID. Use it to trace a sample
+  back to the study's own records.
 s.passage_count: Number of passages (splits) between the original tissue and this
   model.
 s.pathology_report_uuid: UUID of the related pathology report.
