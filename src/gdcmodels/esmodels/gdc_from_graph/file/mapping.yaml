@@ -2202,6 +2202,9 @@ properties:
       lost_to_followup:
         normalizer: clinical_normalizer
         type: keyword
+      original_subject_id:
+        normalizer: clinical_normalizer
+        type: keyword
       outcomes:
         properties:
           censor_os:
@@ -2334,6 +2337,9 @@ properties:
             normalizer: clinical_normalizer
             type: keyword
           oct_embedded:
+            normalizer: clinical_normalizer
+            type: keyword
+          original_sample_id:
             normalizer: clinical_normalizer
             type: keyword
           passage_count:
